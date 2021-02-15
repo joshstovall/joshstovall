@@ -9,7 +9,7 @@
 | image | name | links | 
 | :-: | :-: |:-: |
 |[<img src="https://joshstovall.com/img/solfege.gif" width="160 !important" height="100" title="Solfege to MIDI"/>](https://github.com/instrumentbible/solfege) | **Solfege to MIDI**<br>Tensorflow Experiment | [GitHub](https://github.com/instrumentbible/solfege) <br> [Live Demo](https://instrumentbible.github.io/solfege/)|
-|[<img src="https://joshstovall.com/img/instrument-bible.gif" width="160" height="100" title="Instrument Bible"/>](https://instrument.bible/app/)  | **Instrument Bible**<br>Virtual Fingering Chart | [Live Demo](https://instrument.bible/app/)<br>[Download](https://instrument.bible/download/)  |
+|[<img src="https://joshstovall.com/img/instrument-bible.png" width="160" height="100" title="Instrument Bible"/>](https://instrument.bible/app/)  | **Instrument Bible**<br>Virtual Fingering Chart | [Live Demo](https://instrument.bible/app/)<br>[Download](https://instrument.bible/download/)  |
 |[<img src="https://joshstovall.com/img/xrjs.png" width="160" height="100" title="XR.js"/>](https://xrjs.dev)  | **XR.js**<br>WebXR Framework | [GitHub](https://github.com/xrscript/xr.js) <br>[Live Demo](https://xrjs.dev)  | 
 |[<img src="https://joshstovall.com/img/oscilloscope.gif" width="160" height="100" title="oscilloscope.js"/>](https://instrumentbible.github.io/oscilloscope.js/)  | **oscilloscope.js** <br> WebAudio visualization library | [GitHub](https://github.com/instrumentbible/oscilloscope.js) <br>[Live Demo](https://instrumentbible.github.io/oscilloscope.js/)  |
 |[<img src="https://joshstovall.com/img/finger-drums.gif" width="160" height="100" title="VR Finger Drums"/>](https://youtu.be/4_leZ0v8Ekc)  | **VR Finger Drums**<br>Leapmotion experiment | [YouTube](https://youtu.be/4_leZ0v8Ekc) |
@@ -23,7 +23,7 @@
 |[<img src="https://joshstovall.com/img/max-tuner.gif" width="160" height="100" title="MaxMSP Tuner" />](https://github.com/joshstovall/MaxMSP-Tuner)  | **MaxMSP Tuner**<br>Speed patching in Max | [GitHub](https://github.com/joshstovall/MaxMSP-Tuner)<br>[YouTube](https://youtu.be/8dYLysyxQ2M) |
 |[<img src="https://joshstovall.com/img/max-keyboard.png" width="160" height="100" title="MaxMSP Keyboard"/>](https://github.com/joshstovall/MaxMSP-Computer-Keyboard)  | **MaxMSP Keyboard**<br>Computer keyboard interface |[GitHub](https://github.com/joshstovall/MaxMSP-Computer-Keyboard) |
 |[<img src="https://joshstovall.com/img/waveform-analyzer.gif" width="160" height="100" title="Waveform Analyzer"/>](https://apps.apple.com/app/waveform-analyzer/id1439677657)  | **Waveform Analyzer**<br>tone generator & visualizer | [Download](https://apps.apple.com/app/waveform-analyzer/id1439677657) |
-|[<img src="https://joshstovall.com/img/wiimote.gif" width="160" height="100"  title="WiiMote Pendulum"/>](https://youtu.be/hj2ELPi8K3A)  | **WiiMote Pendulum**<br>Interactive media performance | [YouTube](https://youtu.be/hj2ELPi8K3A) |
+|[<img src="https://joshstovall.com/img/wiimote.png" width="160" height="100"  title="WiiMote Pendulum"/>](https://youtu.be/hj2ELPi8K3A)  | **WiiMote Pendulum**<br>Interactive media performance | [YouTube](https://youtu.be/hj2ELPi8K3A) |
 
 
 # 
