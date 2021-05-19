@@ -8,7 +8,7 @@
 ## My Projects
 | image | name | links | 
 | :-: | :-: |:-: |
-|[<img src="https://joshstovall.com/img/xrband.png" width="160 !important" height="100" title="XR.band"/>](http://xr.bandi) | **XR.band**<br>WebXR Experiment | [Demo](https://xr.band/)|
+|[<img src="https://joshstovall.com/img/xrband.png" width="160 !important" height="100" title="XR.band"/>](http://xr.band) | **XR.band**<br>WebXR Experiment | [Demo](https://xr.band/)|
 |[<img src="https://joshstovall.com/img/solfege.gif" width="160 !important" height="100" title="Solfege to MIDI"/>](https://github.com/instrumentbible/solfege.ai) | **Solfege to MIDI**<br>Tensorflow Experiment | [GitHub](https://github.com/instrumentbible/solfege.ai) <br> [Demo](https://instrumentbible.github.io/solfege.ai/)|
 |[<img src="https://joshstovall.com/img/instrument-bible.png" width="160" height="100" title="Instrument Bible"/>](https://instrument.bible/)  | **Instrument Bible**<br>Virtual Fingering Chart | [Demo](https://instrument.bible/)<br>[Download](https://instrument.bible/download/)  |
 |[<img src="https://joshstovall.com/img/xrjs.png" width="160" height="100" title="XR.js"/>](https://xrjs.dev)  | **XR.js**<br>WebXR Framework | [GitHub](https://github.com/xrscript/xr.js) <br>[Demo](https://xrjs.dev)  | 
