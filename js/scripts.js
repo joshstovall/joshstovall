@@ -1550,7 +1550,7 @@ mr = (function (mr, $, window, document){
                     setTimeout(function(){ mr_parallax.profileParallaxElements(); },100);
                 }
             });
-           // masonryContainer.isotope({ filter: filterValue });
+            masonryContainer.isotope({ filter: filterValue });
             
         });
         
@@ -1591,7 +1591,7 @@ mr = (function (mr, $, window, document){
             });
 
             
-            // masonry.isotope(jQuery.extend({}, themeDefaults, mr.masonry.options, ao));
+           masonry.isotope(jQuery.extend({}, themeDefaults, mr.masonry.options, ao));
 
         });
     };
@@ -1694,10 +1694,10 @@ mr = (function (mr, $, window, document){
 
             if(collection.is('.masonry')){
                 if(newItems.length){
-                  //  masonryContainer.isotope('appended', newItems).isotope( 'layout');
+                   masonryContainer.isotope('appended', newItems).isotope( 'layout');
                 }
                 
-               // masonryContainer.isotope('layout');
+             masonryContainer.isotope('layout');
             }
         });
     };
