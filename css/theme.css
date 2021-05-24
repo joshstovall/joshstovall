@@ -2609,8 +2609,10 @@ div{
 	cursor:default !important
 }
 
-i{font-size:1.2em}
+i{font-size:1em}
 			#projects {padding-top: 3em;}
+#projects i{font-size:1.2em}
+
 			html,body{overflow-x: hidden;}
 			
 			.label {
