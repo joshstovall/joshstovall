@@ -51,6 +51,13 @@ mr = (function (mr, $, window, document){
     mr.documentReady = documentReady;
     mr.windowLoad    = windowLoad;
 
+	
+	
+	
+	
+
+	
+	
     return mr;
 }(window.mr, jQuery, window, document));
 
@@ -191,7 +198,15 @@ mr = (function (mr, $, window, document){
         // Removes hash from URL bar without reloading and without losing search query
         history.pushState("", document.title, window.location.pathname + window.location.search);
     }
-
+								   
+								   
+								   var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
+								   if (path.includes('writing') || path.includes('projects') || path.includes('code')){
+										$( "#start" ).load( "/modules/header.html" );
+								   }
+								   
+								   $( "body" ).append( $('<div>').load('/modules/footer.html') );
+								   
     mr.components.documentReady.push(mr.util.documentReady);
     mr.components.windowLoad.push(mr.util.windowLoad);
     return mr;
@@ -2956,3 +2971,6 @@ mr = (function (mr, $, window, document){
 	  return mr;
 
 }(mr, jQuery, window, document));
+
+
+

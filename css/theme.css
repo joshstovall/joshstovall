@@ -1276,22 +1276,28 @@ section.parallax .row .background-image-holder{transform:none!important;top:0!im
 .label.label--inline + span,.label.label--inline + p{position:relative;top:1px}
 .label.switchable-toggle{left:50%;right:auto;transform:translate3d(-50%,0,0);-webkit-transform:translate3d(-50%,0,0);box-shadow:0 0 20px 0 rgba(0,0,0,0.06)}
 .bg--primary-1 .label:not([class*='bg--']){background:#465773}
-.menu-horizontal > li,.menu-vertical > li{font-family:'Open Sans','Roboto','Helvetica',Sans-Serif}
+.menu-horizontal > li,.menu-vertical > li{font-family:'Open Sans','Roboto','Helvetica',Sans-Serif;
+	display: inline-block;
+}
 .bar .logo{max-height:1.85714286em;max-width:none}
-.menu-horizontal > li > a,.menu-horizontal > li > .modal-instance > a{font-weight:500}
+.menu-horizontal > li > a,.menu-horizontal > li > .modal-instance > a{font-weight:500;
+}
 .menu-horizontal > li a:hover{text-decoration:none}
 .hamburger-toggle i{color:#252525}
 @media all and (min-width: 990px) {
-.menu-horizontal li:not(:last-child){margin-right:1.23809524em}
+.menu-horizontal li:not(:last-child){margin-right:1.23809524em;}
 .bar__module:not(:only-child) .menu-horizontal{top:0}
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
-.bar-2 .menu-horizontal > li,.bar-1 .menu-horizontal > li{display:inline-block}
+.bar-2 .menu-horizontal > li,.bar-1 .menu-horizontal > li{display:inline-block;}
 .bar-2 .menu-horizontal > li:not(:first-child),.bar-1 .menu-horizontal > li:not(:first-child){margin-left:.92857143em}
-.bar-2 .bar__module,.bar-1 .bar__module{margin-bottom:1.85714286em}
+.bar-2 .bar__module,.bar-1 .bar__module{margin-bottom:1.85714286em;}
 .bar-2 .row div[class*='col-']:last-child .bar__module:last-child,.bar-1 .row div[class*='col-']:last-child .bar__module:last-child{margin-bottom:0}
 }
-.bar-1 .menu-horizontal > li > .dropdown__trigger,.bar-1 .menu-horizontal > li > a{font-size:.85714285714286em;line-height:2.1666666666667em;text-transform:uppercase;font-weight:600;letter-spacing:.5px}
+.bar-1 .menu-horizontal > li > .dropdown__trigger,.bar-1 .menu-horizontal > li > a{font-size:.85714285714286em;line-height:2.1666666666667em;text-transform:uppercase;font-weight:600;letter-spacing:.5px;
+	}
+
+.menu-horizontal a {padding-left: 7px;}
 @media all and (min-width: 1024px) {
 .bar-1 .bar__module + .bar__module{margin-left:1.85714286em}
 }
@@ -1310,7 +1316,7 @@ section.parallax .row .background-image-holder{transform:none!important;top:0!im
 @media all and (max-width: 767px) {
 .bar-4 .logo-light{display:none}
 .bar-4 .logo-dark{margin-bottom:1.85714286em}
-.bar.bg--dark{background:#252525}
+.bar.bg--dark{background:#252525;}
 .bar.bg--dark .hamburger-toggle i{color:#fff}
 }
 .hidden{display:none!important;visibility:hidden!important}
@@ -1334,6 +1340,8 @@ th.visible-sm,td.visible-sm{display:table-cell!important}
 .visible-sm-inline{display:inline!important}
 .visible-sm-inline-block{display:inline-block!important}
 }
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
 .visible-md{display:block!important}
 table.visible-md{display:table}
@@ -2611,7 +2619,7 @@ div{
 
 i{font-size:1em}
 			#projects {padding-top: 3em;}
-#projects i{font-size:1.2em}
+#projects .fab, #projects .fa, #projects .fas{font-size:1.2em;padding-right:0.2em}
 
 			html,body{overflow-x: hidden;}
 			
@@ -2633,3 +2641,28 @@ i{font-size:1em}
 }
 span i {font-size:1em;		}
 			.product a img{ box-shadow: 2px 2px 5px #0000004a;}
+.title{
+	color:white;
+	white-space:nowrap
+}
+.bar__module .title {
+	
+	/* margin-top: auto; */
+ /* margin-bottom: auto; */
+ vertical-align: middle;
+ display: inline-block;
+ vertical-align: middle;
+ line-height: 35px;
+ font-size: 1.4em;
+ font-weight: 100;
+
+}
+.menu-horizontal li a i.fab{
+	vertical-align:middle;
+}
+.top-section{
+	overflow:hidden;
+}
+.menu-horizontal li.social{
+	margin-right:0.5em;
+}
