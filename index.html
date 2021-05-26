@@ -14,18 +14,42 @@
 		{
     		"@context": "https://schema.org",
     		"@type": "Person",
-    		"image": "/img/josh.jpg",
-    		"jobTitle": "Technologist",
+    		"jobTitle": "Music Technologist",
     		"name": "Josh Stovall",
-    		"givenName": "Joshua",
+			"url": "https://joshstovall.com"
+			"givenName": "Joshua",
     		"familyName": "Stovall",
+			"email": "mailto:joshstovall@gmail.com",
     		"url": "http://joshstovall.com",
-    		"affiliation": "Instrument Bible LLC",
-    		"alumniOf": "Arizona State University",
-    		"birthDate": "1996-07-18T20:00",
+			"image": "/img/josh.jpg",
+			"sameAs" : [
+				"https://instagram.com/josh_stovall",
+				"https://github.com/joshstovall",
+				"https://twitter.com/j_stov",
+				"https://facebook.com/joshstovallmusic",
+				"https://soundcloud.com/josh_stovall",
+				"https://linkedin.com/in/joshstovall/",
+				"https://youtube.com/channel/UCwzGLJO1mmmVuN-2I4mKKbA"
+			],
+    		"affiliation": {
+			  "@context": "https://schema.org",
+			  "@type": "Organization",
+			  "email": "contact@instrument.bible",
+			  "name": "Instrument Bible",
+			  "url": "https://instrument.bible",
+			  "slogan": "Learn to play any instrument!"
+			},
+    		"alumniOf": {
+				"@type": "EducationalOrganization",
+				"name": "Arizona State University",
+				"sameAs": "https://www.asu.edu/",
+				"startDate": "2014"
+			},
+    		"birthDate": "1996-07-18",
     		"gender": "Male"
 		}
 		</script>
+		
 	</head>
     <body>
         <a id="start"></a>
@@ -488,7 +512,6 @@
        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active"><i class="fas fa-angle-up"></i></a>
         <script src="/js/jquery-3.1.1.min.js"></script>
 		<script src="/js/isotope.min.js"></script>
-
         <script src="/js/smooth-scroll.min.js"></script>
         <script src="/js/scripts.js"></script>
     </body>
