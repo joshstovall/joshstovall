@@ -90,8 +90,6 @@ Maybe the next major innovation in notation will be displaying rhythms on a movi
 
 Although Guido’s hexachord system has become obsolete, his solmization syllables remain an essential element of modern music education. He laid the foundation for modern music solfege. Solfege gained popularity and became wide-spread in the mid-twentieth century through the methods of [Zoltán Kodály](https://www.boosey.com/pages/cr/composer/composer_main?composerid=2847), whose system is based upon Guido’s theories.
 
-#### Color in Music Notation
-
 I think Guido was onto something with his concept of using colors to aid music notation. Although it never truly reached wide-spread use, color could literally add another dimension to the music notation system. I believe that colors will be used in the future not only for music notation but also for music education.
 
 ![Circle of Fifths](https://joshstovall.com/writing/origins-of-music-notation/img/fig4.png)
