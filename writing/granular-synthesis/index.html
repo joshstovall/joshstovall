@@ -1,815 +1,673 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Granular Synthesis: An Overview</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="canonical" href="https://joshstovall.com/writing/granular-synthesis/" />
-        <meta name="description" content="An exploration of granular synthesis concepts in musical composition.  Written by Josh Stovall.">
-			<link rel="stylesheet" href="/css/bootstrap.css"  />
-			<link rel="stylesheet" href="/css/theme.css"  />
-			<link rel="stylesheet" href="/css/writing.css"  />
-			<link rel="stylesheet" href="/css/fontawesome/css/all.min.css" />
-	</head>
-	<body>
-		<a id="start"></a>
-        
-        <div class="main-container">
-            <section>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8">
-                            <article>
-                                <div class="article__title text-center">
-                                    <h1 class="h1">Granular Synthesis: An Overview</h1>
-                              
-                                    <ol type="I">
-                                      <span>December 21<sup>st</sup> 2018 by <a target="_blank" href="http://joshstovall.com">Josh Stovall</a> </span><br>
-									<span>Professor <a target="_blank" href="https://jamesdemars.net">James DeMars</a></span><br>
-									<span>Arizona State University</span><br>
-									</ol>
-                                </div>
-                                <!--end article title-->
-                                <div class="article__body">
-                                    <section id="outline">
-										<h3>Table of Contents</h3>
-
-
-                                        <ol type="I">
-                                          <li><a href="#introduction">Introduction</a></li>
-                                          <li><a href="#chapter-1">Chapter 1 History</a>
-                                            <ol>
-                                                <li><a href="#1.1">1.1 Dennis Gabor</a></li>
-                                                <li><a href="#1.2">1.2 Iannis Xenakis</a></li>
-                                                <li><a href="#1.3">1.3 Curtis Roads</a></li>
-                                                <li><a href="#1.4">1.4 Barry Truax</a></li>
-                                            </ol>
-                                          </li>
-                                          <li><a href="#chapter-2">Chapter 2 Fundamentals</a>
-                                            <ol>
-                                                <li><a href="#2.1">2.1 Anatomy of a Grain</a></li>
-                                                <li><a href="#2.2">2.2 Grain Window</a>
-                                                    <ol>
-                                                        <li><a href="#2.2.1">2.2.1 Basic Shapes</a></li>
-                                                        <li><a href="#2.2.2">2.2.2 Complex Shapes</a></li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                          </li>
-                                          
-                                          <li><a href="#chapter-3">Chapter 3 Global Organization</a>
-                                            <ol>
-
-                                                <li><a href="#3.1">3.1 Grain Density</a>
-                                                    <ol>
-                                                        <li><a href="#3.1.1">3.1.1 Synchronous</a></li>
-                                                        <li><a href="#3.1.2">3.1.2 Asynchronous</a></li>
-                                                    </ol>
-                                                </li>
-                                                
-                                                <li><a href="#3.2">3.2 Spatialization</a></li>
-
-                                                
-                                            </ol>
-                                          </li>
-                                          
-                                          <li><a href="#chapter-4">Chapter 4 Techniques</a>
-                                            <ol>
-                                                <li><a href="#4.1">4.1 Change Speed/Pitch Independently</a></li>
-                                                <li><a href="#4.2">4.2 Pulsar Synthesis</a></li>
-                                                <li><a href="#4.3">4.3 Trainlet Synthesis</a>
-                                                    <ol>
-                                                        <li><a href="#4.3.1">4.3.1 Trainlet Clouds</a></li>
-                                                    </ol>
-                                                </li>
-                                                <li><a href="#4.4">4.4 Glisson Synthesis</a></li>
-                                                <li><a href="#4.5">4.5 Spectral Synthesis</a></li>
-
-                                                
-                                            </ol>
-                                          </li>
-                                          
-                                          <li><a href="#conclusion">Conclusion</a></li>
-                                          <li><a href="#references">References</a></li>
-
-                                        </ol>
-                                    </section>
-                                    
-                                    
-
-                                    
-                                    <section id="introduction">
-                                        <h3>Introduction</h3>
-
-                                        <p>
-                                        Granular synthesis is a term used to describe anything that processes audio using granulation: the division of sound into tiny microacoustic events, called grains. Grains can be thought of as the molecular “atoms” that make up sound. After a sound is broken into tiny grains, they can then be redistributed and reorganized to form new sounds. Granular synthesis is perceived as a relatively recent development in sound synthesis, but it can also be seen as a reflection of long-standing ideas about the nature of sound.
-                                        </p>
-                                    </section>
-                                    
-                                    
-                                    
-                                    
-                                    <section id="chapter-1">
-                                        <h3>Chapter 1 History</h3>
-
-                                        <section id="1.1">
-                                            <h4>1.1 Dennis Gabor</h4>
-                                            <p>
-                                            <a target="_blank" href="https://en.wikipedia.org/wiki/Dennis_Gabor">Dennis Gabor</a> was first to conceptualize granular synthesis in 1946, in his <i><a target="_blank" href="http://granularsynthesis.com/pdf/gabor.pdf">Theory of Communication</a></i>.<sup><a href="#ref13">13</a></sup>
-                                            Although the notion that a perceived continuous phenomena can be subdivided into particles traces back to Greek philosophers, the modern scientific theory of <a target="_blank" href="https://en.wikipedia.org/wiki/Microsound">microsound</a> dates back to Gabor, who applied the concept of an acoustic quantum to the threshold of human hearing.
-                                            The original intent of his study was to reduce the amount of data required for human audio communication, necessitated by the low band width but rising use of <a target="_blank" href="https://en.wikipedia.org/wiki/Telecommunication">telecommunication</a> in the 1940s.<sup><a href="#ref1">1</a></sup>
-                                            Nonetheless, his theories made their way into the world of music composition as the basis for granular synthesis.
-                                            </p>
-                                        </section>
-                                        
-                                        
-                                        <section id="1.2" >
-                                            <h4>1.2 Iannis Xenakis</h4>
-
-                                            <p>
-                                            <a target="_blank" href="https://en.wikipedia.org/wiki/Iannis_Xenakis">Iannis Xenakis</a> came across Gabor's research and began to implement these concepts into his music.
-                                            Xenakis had previously used the idea of “points” of sound in his compositions for orchestra, although it was not until 1959 that Xenakis modified a <a target="_blank" href="https://en.wikipedia.org/wiki/Reel-to-reel_audio_tape_recording">reel to reel tape recorder</a> to realize true microacoustic granular synthesis.
-                                            This process involved splicing magnetic tape into tiny segments, rearranging the segments, and taping the new string of segments together.
-                                            </p>
-                                            <p>
-                                            His first complete work to use granular synthesis techniques was <i>Analogique A et B</i>.
-                                            <i>Analogique B</i> is the granular synthesis part of <i>Analogique A-B</i>, and is written to be played simultaneously with <i>Analogique A</i>. <i>Analogique B</i> consists of four tracks to be played through 8 speakers around the concert hall.
-                                            Xenakis states that each grain has a threefold nature: duration, frequency and intensity.
-                                            </p>
-                                            
-                                           
-                                            
-                                            
-                                            <figure id="fig1">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/fHKTs4VtKDU"></iframe>
-                                                <figcaption>Figure 1. Xenakis on periodicity.</figcaption>
-                                            </figure>
-                                        
-										<blockquote>
-											<p>
-											&ldquo;All sound, even continuous musical variation, is conceived as an assemblage of a large number of elementary sounds adequately disposed in time. In the attack, body, and decline of a complex sound, thousands of pure sounds appear in a more or less short interval of time. We are in a kind of continuum form, say, usual objects of music that are inaudible, but which produce these events on a higher level.&rdquo;
-											</p>
-											<span>&mdash; Iannis Xenakis</span>
-										</blockquote>
-                                        </section>
-
-                                        
-                                        <section id="1.3">
-
-                                            <h4>1.3 Curtis Roads</h4>
-
-                                            <p>
-                                            After attending a lecture by Xenakis on this topic, <a target="_blank" href="https://curtisroads.net/">Curtis Roads</a> began experimenting.
-                                            Roads was the first to realize granular synthesis using a computer in 1975.
-                                            His first experiments were extremely time consuming, taking weeks to render a one minute mono sound.
-                                            Roads expanded on the ideas of Xenakis and his research has led to much of the current work based on granular synthesis.
-                                            Roads has created many granular synthesis computer programs, notably <i>Cloud Generator</i> which is designed to teach users about granular synthesis.
-                                            </p>
-                                         
-                                            <figure id="fig2">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://youtube.com/embed/MsaHoBjfTMY"></iframe>
-                                                <figcaption>Figure 2. Curtis Roads on his first granular composition.</figcaption>
-                                            </figure>
-                                            
-                                        </section>
-                                        
-                                        <section id="1.4">
-
-
-                                            <h4>1.4 Barry Truax</h4>
-                                            <p>
-                                            Inspired by an article on granular synthesis written by Roads,
-                                            <a target="_blank" href="https://en.wikipedia.org/wiki/Barry_Truax">Barry Truax</a> began developing a method to create granular synthesis in real-time, first realized in 1986 in his work <a target="_blank" href="https://www.sfu.ca/~truax/river.html"><i>Riverrun</i></a>.
-                                            It is based on synthesized grains which are either simple waveforms or FM signals.
-                                            </p>
-                                          
-                                            <blockquote>
-                                                <p>
-                                                &ldquo;
-                                                Curtis Roads had done it in non-real time, heroically, hundreds of hours of calculation time on mainframes, just to get a few seconds of sound. He had done that, but it remained a textbook case. As soon as I started working with it in real time and heard the sound, it was rich, it was appealing to the ear, immediately, even with just sine waves as the grains. Suddenly they came to life. They had a sense of what I now call volume, as opposed to loudness. They had a sense of magnitude, of size, of weight, just like sounds in the environment do. And it’s not I think coincidental that the first piece I did in 1986 called Riverrun which was the first piece realized entirely with real-time granular synthesis.
-                                                &rdquo;
-                                                </p>
-                                                <span>&mdash; Barry Truax <sup><a href="#ref2">2</a></sup></span>
-                                            </blockquote>
-                                            
-                                            
-                                            
-                                            <figure id="fig3">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/u81IGEFt7dM"></iframe>
-                                                <figcaption>Figure 3. <i>Riverrun</i> by Barry Truax (1986)</figcaption>
-                                            </figure>
-                                            
-                                        </section>
-                                    </section>
-
-                                    
-
-                                    <section id="chapter-2">
-                                        <h3>Chapter 2 Fundamentals</h3>
-
-                                        <section id="2.1">
-                                            <h4>2.1 Anatomy of a Grain</h4>
-                                            <p>
-                                                A grain is a short “atom” of sound lasting 1 – 100 ms.
-                                                Contents of a grain can be sampled audio or synthesized sound waves.
-                                                From that source, a grain of sound is retrieved.
-                                                There are three parameters a composer can use to manipulate the contents of a grain: the retrieval point from the source, the duration of the grain, and the playback speed.
-                                            </p>
-                                            
-                                            <figure id="fig4">
-                                                <img alt="A grain" src="img/fig-4.png"/>
-                                                <figcaption>Figure 4.  A grain.</figcaption>
-                                            </figure>
-                                            
-                                        </section>
-                                        
-                                        <section id="2.2">
-                                            
-                                            <h4>2.2 Grain Window</h4>
-                                            <p>
-                                                Grains have amplitude fades at their beginning and end, fundamentally to eliminate artifacts in the audio signal.
-                                                If a waveform is sliced anywhere other than a zero-crossing point, there will be an audible popping sensation.
-                                                However, since the envelope shape can also have a significant effect on the sound grain, it can be used creatively as a way to shape the sound.
-                                                The shape of these fades is called the “window” or envelope.
-                                            </p>
-                                            
-                                            <figure id="fig5">
-                                                <img alt="Grain window" src="img/fig-5.png"/>
-                                                <figcaption>Figure 5. Grain window.</figcaption>
-                                            </figure>
-                                            
-                                            <div class="row ">
-
-                                                <div class=" col-12 col-sm-6">
-                                                    
-                                                    <section id="2.2.1"  class="col-12 ">
-                                                        <h5>2.2.1 Basic Window Shapes</h5>
-                                                        
-                                                        <div class="row">
-                                                            <p class="col-6 col-sm-12">
-                                                                Basic window shapes have fades at the beginning and end of the envelope.
-                                                                The slope of each fade can be manipulated. The duration of the envelope can also be manipulated.
-                                                            </p>
-                                                            
-                                                            <figure id="fig6" class="col-6 col-sm-12">
-                                                                <img alt="Grain window" src="img/fig-6.png"/>
-                                                                <figcaption>Figure 6. Basic window shapes.<sup><a href="#ref3">3</a></sup></figcaption>
-                                                            </figure>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                                <div class=" col-12 col-sm-6">
-                                                    
-                                                    <section id="2.2.2">
-                                                        <h5>2.2.2 Complex Shapes</h5>
-                                                        <div class="row">
-                                                            <p class="col-6 col-sm-12">
-                                                                Complex window shapes are rather new to the idea of granular synthesis.
-                                                                They consist of two envelopes.
-                                                                <a href="#fig6">Figure 6</a> shows an example where the first envelope is a sine type wave.
-                                                                Over the sine wave is placed another wave, any type of linear or exponential wave is adequate.
-                                                            </p>
-                                                            <figure  class="col-6 col-sm-12">
-                                                                <img alt="Grain window" src="img/fig-7.png"/>
-                                                                <figcaption>Figure 7. Complex Window Shape.</figcaption>
-                                                            </figure>
-                                                            
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                                
-                                            </div>
-                                            
-                                            <figure id="fig8"><!-- fix this-->
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Mb4EEWedQKM"></iframe>
-                                                <figcaption>Figure 8. Grain window demonstration <a target="blank" href="https://youtu.be/Mb4EEWedQKM">Source</a></figcaption>
-                                            </figure>
-                                            
-                                            
-                                            
-                                        </section>
-                                        
-                                    </section>
-                                    
-                                    
-                                    
-
-                                    
-                                    <section id="chapter-3">
-
-                                        <h3>Chapter 3 Global Organization</h3>
-
-                                        <p>
-                                        <i>Global organization</i> will refer to the organization of grains, specifically how they are arranged in time and space.
-                                        There are a seemingly infinite number of ways to arrange these acoustic particles.
-                                        Grains can be played back in different order, overlapping, coming from many speaker locations, really any imaginable configuration.
-                                        Due to this, granular synthesis requires a massive amount of control data.
-                                        </p>
-                                        
-                                        <blockquote>
-                                            <p>
-                                            &ldquo;
-                                            If <b>n</b> is the number of parameters per grain, and <b>d</b> is the density of grains per second, it takes <b>n</b> times <b>d</b> parameter values to specify one second of sound.
-                                            Since <b>n</b> is usually greater than ten and <b>d</b> can exceed one thousand, it is clear that a global unit of organization is necessary for practical work.
-                                            &rdquo;
-                                            </p>
-                                            <span>&mdash; Curtis Roads <sup><a href="#ref4">4</a></sup></span>
-                                        </blockquote>
-                                        
-                                        <p>
-                                        The major differences between the various granular techniques are found in these global organizations and algorithms.
-                                        </p>
-                                        
-                                        <figure id="fig8">
-                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/kqUNLIjCSrs"></iframe>
-                                            <figcaption>Figure 8. Xenakis on probabilities.</figcaption>
-                                        </figure>
-                                        
-                                        <section id="3.1">
-                                            <h4>3.1 Grain Density</h4>
-
-                                            <p>
-                                            
-                                            Grain density refers to the number of grains per second.
-                                            It is frequency in which grains are produced.
-                                            For example if the density is specified at 200 g/s, then 200 grains will be randomly (or statistically) distributed throughout that second.
-                                            “A one-second cloud containing twenty 100 ms grains is continuous and opaque, whereas a cloud containing twenty 1 ms grains is sparse and transparent. 
-                                            The difference between these two cases is their fill factor. The fill factor of a cloud is the product of its density and its grain duration in seconds.” <sup><a href="#ref5">5</a></sup>
-                                            For a typical grain duration of 25 ms, we can make the following observations concerning grain density as it crosses perceptual thresholds.
-                                            
-                                            </p>
-                                            
-                                            <figure>
-												
-												
-												
-												
-
-			<table title="Synchronous granular synthesis">
-			  <tr>
-				<th>Grains per second</th>
-				<th>Perception</th>
-			  </tr>
-			  <tr>
-				<td>< 15</td>
-				<td>Rhythmic sequences.</td>
-			  </tr>
-			  <tr>
-				<td>15-25</td>
-				<td>Fluttering, sensation of rhythm disappears.</td>
-			  </tr>
-			  <tr>
-				<td>25-50</td>
-				<td>Grain order disappears. As density increases, we no longer perceive an acceleration of tempo, rather an increase in the flow of grains.</td>
-			  </tr>
-			  <tr>
-				<td>50-100</td>
-				<td>Texture band.  If the bandwidth is greater than a semitone, we cannot discern individucal frequencies.</td>
-			  </tr>
-			  <tr>
-				<td>> 100</td>
-				<td>Continuous sound mass. No space between grains. In some cases, resembles reverberation.</td>
-			  </tr>
-			  
-			</table>
-			
-			
-                                                <figcaption>Figure 9. Result of various grain densities.<sup><a href="#ref6">6</a></sup></figcaption>
-                                            </figure>
-                                            
-                                            
-                                            
-                                       
-                                            <section id="3.1.2">
-                                                <h5>3.1.2 Synchronous</h5>
-
-                                                <p>
-                                                <i>Synchronous</i> granular synthesis implies that the time difference between successive grains, or the <i>hop size</i> — is constant.
-                                                The spacing between the grains in granular synthesis can radically change the texture that is created.
-                                                A very low density will produce a rhythmic effect.
-                                                Once the density reaches a certain level the rhythmic effect will morph into a pitched effect.
-                                                The frequency produced is the reciprocal of the hop size, which acts as the period of a periodic waveform.
-                                                The grain duration is so short that the frequency of the waveform within the grain affects the spectrum, but will not change the fundamental pitch of the sound.
-                                                Roads writes that “synchronous granular synthesis is very closely related to Formant Synthesis”.<sup><a href="#ref7">7</a></sup>
-                                                </p>
-                                                
-                                                
-                                                <figure id="fig12">
-                                                    <img alt="Synchronous granular synthesis" src="img/fig-12.png"/>
-                                                    <figcaption>Figure 10. Synchronous granular synthesis. - <a target="_blank" href="https://www.sfu.ca/~truax/gran.html">Source</a></figcaption>
-                                                </figure>
-                                                
-                                            </section>
-                                            <section id="3.1.2">
-                                                <h5>3.1.2 Asynchronous</h5>
-
-                                                <p>
-                                                <i>Asynchronous</i> granular synthesis produces <i>grain clouds</i> by scattering grains in a statistical manner over a specified duration.
-                                                It abandons the concept of linear streams of grains and instead, disperses grains within regions on the time-frequency plane.
-                                                The starting time and frequency of each grain can be randomized or controlled through algorithms.
-                                                Asynchronous granular synthesis typically produces noise textures, rather than pitch.
-                                                However, it can be perceived often as more of a continuum.
-                                                Roads writes:
-                                                </p>
-                                                <blockquote>
-                                                    <p>&ldquo;Some grains may overlap, leaving silences at other points in the cloud. Using 20 ms grains, it takes about 100 grains to cover a one-second cloud. Tiny gaps (less than 50 ms) do not sound as silences, but rather as fluctuations of amplitude.&rdquo;</p>
-                                                </blockquote>
-                                                <figure id="fig13">
-                                                    <img alt="Grain clouds" src="img/fig-13.png"/>
-                                                    <figcaption>Figure 11. Grain Clouds - <a target="_blank" href="http://sites.music.columbia.edu/cmc/MusicAndComputers/chapter4/04_08.php">Source</a></figcaption>
-                                                </figure>
-                                                <figure>
-                                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/r5EVPZoCg_U"></iframe>
-                                                    <figcaption>Figure 12. Curtis Roads on <i>Cloud Generator</i></figcaption>
-                                                </figure>
-												<p>By increasing the grain density, we saturate the texture, creating effects that depend on the bandwidth.<sup><a href="#ref10">10</a></sup></p>
-                                                <ul class="bullets">
-                                                    
-                                                    <li><b><i>Narrow bands</i></b> and high densities generate pitched streams with formant spectra.</li>
-                                                    <li><b><i>Medium bands</i></b> (several semitones) and high densities generate turgid colored noise.</li>
-                                                    <li><b><i>Wide bands</i></b> (octave or more) and high densities generate massive clouds of sound.</li>
-                                                   
-                                                </ul>
-                                                
-                                                
-                                                <figure id="fig14">
-                                                    <img hidden alt="Result of various grain densities" src="img/fig-14.png"/>
-                                                  
-
-			  <table>
-				<tr>
-				  <th>Grain Duration</th>
-				  <th>Modulation Frequency</th>
-				  <th>Perceived Effect</th>
-				</tr>
-				<tr>
-				  <td>200 usec</td>
-				  <td>5 KHz</td>
-				  <td>Noisy particulate disintegration</td>
-				</tr>
-				<tr>
-				  <td>500 usec</td>
-				  <td>2 KHz</td>
-				  <td></td>
-				</tr>
-				<tr>
-				  <td>1 ms</td>
-				  <td>1 KHz</td>
-				  <td>Loss of pitch</td>
-				</tr>
-				<tr>
-				  <td>10 ms</td>
-				  <td>100 Hz</td>
-				  <td>Fluttering, gurgling</td>
-				</tr>
-				<tr>
-				  <td>50 ms</td>
-				  <td>20 Hz</td>
-				  <td>Stable pitch formation</td>
-				</tr>
-				<tr>
-				  <td>100 ms</td>
-				  <td>10 Hz</td>
-				  <td></td>
-				</tr>
-				
-				<tr>
-				  <td>200 ms</td>
-				  <td>5 Hz</td>
-				  <td>Aperiodic tremolo, jittering</td>
-				</tr>
-			  </table>
-												  
-												  
-												  <figcaption>Figure 13. Result of various grain densities.</figcaption> <!-- Effects of grain durations in asynchronous granular synthesis -->
-                                                </figure>
-                                                
-                                            </section>
-                                        </section>
-                                        <section id="3.2">
-                                            <h4>3.2 Spatialization</h4>
-
-                                            <p>
-                                            Not only can we distribute grains along the time but also the space, the <a target="_blank" href="https://en.wikipedia.org/wiki/Spacetime">space-time continuum</a>.
-                                            When grains scatter to a unique locations, the cloud manifests a vivid “three-dimensional spatial morphology”.<sup><a href="#ref11">11</a></sup>
-                                            This is evident even in a stereophonic configuration.
-                                            Spacial location can be manipulated through panning, and spacial depth can be created through reverb amount, volume, and low-pass to create the perception of distance.
-                                            In <a href="#fig14">Figure 14</a>, the x-axis = panorama, y-axis = pitch modulation, and z-axis = sample reading position.
-                                            </p>
-                                            
-                                            
-                                            
-                                            <figure id="fig14">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/b5xZ5Urc3kY"></iframe>
-                                                <figcaption>Figure 14. Granular spatialization. <a target="blank" href="https://youtu.be/b5xZ5Urc3kY">Source</a></figcaption>
-                                            </figure>
-                                            
-                                    
-                                            
-                                            <figure id="fig15">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/OkVMBmyRywg"></iframe>
-                                                <figcaption>Figure 15. Stockhausen on space.</figcaption>
-                                            </figure>
-                                        
-                                        </section>
-                                    </section>
-                                    
-                                    
-
-                                    
-                                    <section id="chapter-4">
-
-                                        
-                                        <h3>Chapter 4 Granular Techniques</h3>
-                                        <p>
-                                            This chapter will explore practical applications and compositional techniques of granular synthesis.
-                                        </p>
-                                        
-                                        <section id="4.1">
-                                            <h4>4.1 Change Speed/Pitch Independently</h4>
-
-                                            <p>
-                                            Granular synthesis allows us to stretch or compress audio, independent of pitch. Before the use of computers, analogue tape decks could be used to speed up or slow down sounds, however this also caused the pitch to shift. Slowing down audio would literally stretch out the frequency of the waveform. This all changed with the advent of computer technology.
-                                            </p>
-                                            <p>
-                                            The ability to change a sound’s speed without affecting pitch, or vice-versa, is a possible using granular synthesis. With tape, one could stretch a sound, but to maintain the frequency of a wave while stretching it (in theory) would create gaps between the grains. The only way to fill these gaps was to stretch the grains themselves, thus lowering the pitch. By implementing granular synthesis techniques we can alter a sound’s atomic makeup. We can fill the gaps by looping nearby grains.
-                                            </p>
-                                            <p>
-                                            Figure 17 shows Stockhausen describing this process in 1972, before it was actually possible.
-                                            Figure 18 shows a modern demonstration of this technique, using Logic Pro X.
-                                            </p>
-                                         
-                                            
-                                            <figure id="fig17">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/pw1-RI_jqJ0"></iframe>
-                                                <figcaption>Figure 17. Excerpt from Four Criteria for Electronic Music.<sup><a href="#ref2">2</a></sup></figcaption>
-                                            </figure>
-                                        
-                                            <figure id="fig18">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/7rIZNGjiokM"></iframe>
-                                                <figcaption>Figure 18. Time stretching with granular synthesis. <sup><a target="blank" href="https://youtu.be/MfWgzjUC-l0">Source</a></sup></figcaption>
-                                            </figure> 
-                                        
-                                        </section>
-                                    
-                                        <section id="4.2">
-                                            <h4>4.2 Pulsar Synthesis</h4>
-
-                                            <p>
-                                            <i>Pulsar synthesis</i> is a method of sound synthesis based on the generation of electronic pulses and pitched tones.
-                                            Pioneers of pulsar synthesis include <a target="_blank" href="https://en.wikipedia.org/wiki/Karlheinz_Stockhausen">Karlheinz Stockhausen</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Gottfried_Michael_Koenig">Gottfried Michael Koenig</a>.<sup><a href="#ref12">12</a></sup>
-                                            Pulsar synthesis can produce either rhythms or tones as it crosses perceptual time spans.
-                                            </p>
-                                            
-                                            <blockquote>
-                                                <p>
-                                                &ldquo;
-                                                It is necessary that the strength of the vibrations of the air for very low tones should be extremely greater than for high tones. The increase in strength...is of special consequence in the deepest tones...To discover the limit of the deepest tones it is necessary not
-                                                only to produce very violent agitations of the air but to give these a simply pendular motion.
-                                                &rdquo;
-                                                </p>
-                                                <span>&mdash; Hermann von Helmholtz (1885)</span>
-                                            </blockquote>
-                                            
-                                            <p>
-                                            Thus to perceive this transition between time layers, pulses must be strong.
-                                            <a target="_blank" href="https://en.wikipedia.org/wiki/Hermann_von_Helmholtz">Helmholtz</a> observed that a sense of continuity is perceived between 24 to 28 Hz, but that the impression of a definite pitch does not take hold until 40Hz.<sup><a href="#ref13">13</a></sup>
-                                            I find this fascinating, and a key ingredient to pulsar synthesis.
-                                            If music is all about tension and release, this is what makes pulsar synthesis music.
-                                            Stockhausen formulated a theory of the continuum between rhythm and pitch, that is, between infrasonic frequencies and the audible frequencies of short-duration impulses.
-                                            </p>
-                                            <p>
-                                            
-                                            While pulsar synthesis is not “granular” per se (using sampled audio), these concepts are fundamental to understanding granular possibilities regarding the time domain.
-                                            By transposing rhythms into the audible frequency range, Stockhausen could build un-pitched noises from aperiodic sequences of impulses.
-                                            He distinguishes twenty-one time octaves spanning the durations from 1/16th of a second to one hour, which constitute the range of perceivable events music composition.<sup><a href="#ref14">14</a></sup>
-                                            
-                                            </p>
-                                            <p>
-                                            <strike hidden>
-                                                Figure 20 is an excerpt from <i>Kontakte</i>, demonstrating this technique.
-                                            </strike>
-                                            Roads builds upon and illustrates this theory in <i>Microsound</i> (Figure 21).
-                                            
-                                            </p>
-                                            
-                                            <figure id="fig19">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Ytq6A1sx1JY"></iframe>
-                                                <figcaption>Figure 19. The splitting of the sound.</figcaption>
-                                            </figure>
-                                            
-                                            <figure id="fig20">
-                                                <img alt="Time domain in Microsound by Curtis Roads" src="img/fig-21.png"/>
-                                                <figcaption>Figure 21. Time Scales of Music (Curtis Roads, <i>Microsound</i>)</figcaption>
-                                            </figure>
-                                            
-                                        </section>
-                                        
-                                        <section id="4.3">
-                                                
-                                            <h4>4.3 Trainlet Synthesis</h4>
-
-                                            <p>
-                                            
-                                            <i>Trainlet synthesis</i> consists of a brief series (or <i>train</i>) of grains.
-                                            It is based upon the basic principles of pulsar synthesis.
-                                            However it uses grains of sound rather than electronic pulses.
-                                            A <i>train</i> is described as the unit of musical organization on the time scale of notes and phrases.
-                                            A train can last anywhere from a few hundred milliseconds to a minute or more.<sup><a href="#ref16">16</a></sup>
-                                            
-                                            </p>
-                                            <p>
-                                            <a href="fig22">Figure 22</a> shows a single grain (<i>d</i>) followed by silence (<i>s</i>).
-                                            The total duration is <i><b>p = d + s</b></i>, where <i>p</i> is the period, <i>d</i> is the duty cycle, and <i>s</i> is silent.
-                                            Both <i>p</i> and <i>d</i> are continuously variable quantities.
-                                            They are controlled by separate envelope curves that span a train of pulsars.
-                                            Repetitions of the period form a train.
-                                            They can be periodic or aperiodic, creating tones or noises.
-                                            Trainlet synthesis generates rhythmically structured crossbred sampled sounds.
-                                            
-                                            </p>
-                                            
-                                            <figure id="fig22">
-                                                <img alt="Pulse train" src="img/fig-22.png"/>
-                                                <figcaption>Figure 22. Pulse train.<sup><a href="#ref1">1</a></sup></figcaption>
-                                            </figure>
-                                            
-                                            <section id="4.3.1">
-                                                <h4>4.3.1 Trainlet Clouds</h4>
-
-                                                <p>
-                                                
-                                                If grains all have a similar frequency, the result is a musical pitch&mdash;but as the frequencies of the grains are spread over a larger range, the result becomes a broad band noise, much like the natural textures of wind and water.
-                                                These sounds create a remarkable sense of space and volume. Similarly, if the durations of the grains are all similar, the frequency spectrum and timbre of the resulting sound is much richer because of the phenomenon of amplitude modulation.
-                                                In addition, when a short delay is placed between grains and then increased, the fused granular texture begins to "pull apart" as isolated events emerge perceptually from the texture and eventually establish rhythmic relations.
-                                                Once global amplitude contours are added along with spatial deployment, we have replicated all of the basic acoustic properties of sound.
-                                                
-                                                </p>
-                                                
-                                                <figure id="fig23">
-                                                    <img alt="Trainlet cloud" src="img/fig-23.png"/>
-                                                    <figcaption>Figure 23. Trainlet cloud of grains.</figcaption>
-                                                </figure>
-                                                
-                                                
-                                            </section>
-                                            
-                                        </section>
-                                            
-                                        <section id="4.4">
-                                            <h4>4.4 Glisson Synthesis</h4>
-
-                                            <div class="row">
-                                                <p class="col-12 col-sm-6  col-lg-6">
-                                                
-                                                <i>Glisson synthesis</i> is a technique inspired by Xenakis describing each grain as a vector, rather than a point.
-                                                Each individual particle has an independent frequency trajectory.
-                                                Glisson synthesis scatters particles on the time-frequency plane, either synchronously or asynchronously bounded by time, frequency, and amplitude.
-                                                
-                                                </p>
-                                                
-                                                <figure id="fig24" class="col-12 col-sm-6  col-lg-6">
-                                                    <img alt="Trainlet cloud" src="img/fig-24.png"/>
-                                                    <figcaption>Figure 24. Glisson grains.</figcaption>
-                                                </figure>
-                                            
-                                            </div>
-                                            <figure id="fig25">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/YdV6b1gLe2Y"></iframe>
-                                                <figcaption>Figure 25. Glissandi Grains Example. - Source</figcaption>
-                                            </figure>
-                                            
-                                            
-                                        </section>
-                                        <section id="4.5">
-                                            <h4>4.5 Spectral Grain Synthesis</h4>
-
-                                            <p>
-                                                <i>Spectral grain synthesis</i> is a method to manipulate timbre.
-                                                It allows for the altering of formant regions through the addition of sinusoidal grains.
-                                                The frequencies can also be manipulated, snapped or stretched from the harmonic series.
-                                                This allows for pitched sounds to dissolve into noise.
-                                            </p>
-                                            
-                                            <figure id="fig26">
-                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ZfzsN1c-JCk"></iframe>
-                                                <figcaption>Figure 26. Spectral grain demonstration. <a target="blank" href="https://youtu.be/Mb4EEWedQKM">Source</a></figcaption>
-                                            </figure>
-                                        </section>
-                                        
-                                        
-                                    </section>
-                                    
-                                    
-
-                                    
-                                    <section id="conclusion">
-
-                                        <h3>Conclusion</h3>
-
-                                        <p>
-                                            Granular synthesis allows composers to to create textures unlike anything which exist in the past.
-                                            Composers can now compose below the note level.
-                                            It allows for the real time construction and deconstruction of sound, which can be a formal compositional element.
-                                            The advent of computer technology has allowed for the manipulation of sound down to the microacoustic level.
-                                            There is still a world of possibilities to be explored.
-                                        </p>
-                                        
-                                         <figure>
-                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/XwslRulRbSo"></iframe>
-                                            <figcaption>Figure 27. Curtis Roads on granular synthesis.</figcaption>
-                                        </figure>
-                                        
-                                        
-                                        <blockquote>
-                                            <p>
-                                            &ldquo;
-                                            The basis of granular synthesis in the seemingly trivial grain has had a powerful effect on my way of thinking about sound.
-                                            It clearly juxtaposes the micro and macro levels, as the richness of the latter lies in stark contrast to the insignificance of the former.
-                                            Moreover, the range of densities obtainable, from the low levels associated with human gestures through those perceived as rapid and virtuosic, culminating with entirely fused textures, suggests a scale of composition ranging from human proportions to abstract.
-                                            Finally, in terms of the theme of sound and structure, it is clear that the two are inseparable with this technique.
-                                            The macro level structure is best described in terms of its component sounds, and the resulting sound complex is definable only in terms of the structural levels that characterize its organization.
-                                            &rdquo;
-                                            </p>
-                                            <span>&mdash; Barry Truax (1990) </span><sup><a href="#ref8">8</a></sup>
-                                        </blockquote>
-                                        
-                                        
-                                        
-                                        <blockquote>
-                                            <p>
-                                            &ldquo;
-                                            It seems that a new type of musician is necessary, an ‘artist-conceptor’ of new, abstract, and free forms, tending towards complexities, and the towards generalizations on several levels of sound organization.
-                                            The artist-conceptor would have to be knowledgable in such varied domains as mathematics, logic, physics, chemistry, biology, genetics, paleontology (for the evolutions of forms), the humanities and history;
-                                            in short, a sort of universality, but on based upon, guided by and oriented toward forms and architectures.
-                                            &rdquo;
-                                            </p>
-                                            <span>&mdash; Iannis Xenakis (1985)</span>
-                                        </blockquote>
-                                        
-                                        
-                                       
-                                        <figure>
-                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/vhnldRhOs8M"></iframe>
-                                            <figcaption>Figure 28. Stockhausen on perception.</figcaption>
-                                        </figure>
-                                        
-                                        
-                                        
-                                    </section>
-                                    
-                                    
-
-                                    
-                                    <section id="references">
-
-                                        <h3>References</h3>
-
-                                        <ul>
-                                            <li id="ref1" ><b>Microsound</b> by Curtis Roads (2001)</li>
-                                            <li id="ref2" ><b>Four Criteria of Electronic Music</b> by Karlheinz Stockhausen (1971) <a target="_blank" href="https://youtu.be/7xyGtI7KKIY">youtube.com</a></li>
-                                            <li id="ref3" ><b>From Grains to Forms</b> by Curtis Roads (2012) University of California, Santa Barbara, May 2012 <a target="_blank" href="http://cdmc.asso.fr/sites/default/files/texte/pdf/rencontres/intervention16_xenakis_electroacoustique.pdf">cdmc.asso.fr</a></li>
-                                            <li id="ref4" ><b>The Evolution of Granular Synthesis: An Overview of Current Research</b> by Curtis Roads (2006) Symposium on Legacies of Iannis Xenakis <a target="_blank" href="https://pdfs.semanticscholar.org/36ea/94a82ce58abee7102e6a6cf45ac86c41c888.pdf">semanticscholar.org</a></li>
-                                            <li id="ref5" ><b>Creation of a Real-Time Granular Synthesis Instrument for Live Performance</b> by T. T. Opie (2003) Queensland University of Technology <a target="_blank" href="https://eprints.qut.edu.au/15865/">qut.edu.au</a></li>
-                                            <li id="ref6" ><b>Time Shifting and Transposition with a Real-Time Granulation Technique</b> by Barry Truax (1994) Computer Music Journal, Vol. 18, No. 2, pp. 38-48 <a target="_blank" href="https://jstor.org/stable/3680442">jstor.org/stable/3680442</a></li>
-                                            <li id="ref7" ><b>An Interview with Barry Truax</b> by Toru Iwatake & B. Truax (1994) Computer Music Journal, Vol. 18, No. 3, pp. 17-24 <a target="_blank" href="https://jstor.org/stable/3681181">jstor.org/stable/3681181</a></li>
-                                            <li id="ref8" ><b>Composing with Real-Time Granular Sound</b> by Barry Truax (1990) Perspectives of New Music, Vol. 28, No. 2, pp. 120-134 <a target="_blank" href="https://jstor.org/stable/833014">jstor.org/stable/833014</a></li>
-                                            <li id="ref9" ><b>Introduction to Granular Synthesis</b> by Curtis Roads (1988) Computer Music Journal, Vol. 12, No. 2, pp. 11-13 <a target="_blank" href="https://jstor.org/stable/3679937">jstor.org/stable/3679937</a></li>
-                                            <li id="ref10"><b>Real-Time Granular Synthesis with a Digital Signal Processor</b> by Barry Truax (1988)  Computer Music Journal, Vol. 12, No. 2, pp. 14-26 <a target="_blank" href="https://jstor.org/stable/3679938">jstor.org/stable/3679938</a></li>
-                                            <li id="ref11"><b>Automated Granular Synthesis of Sound</b> by Curtis Roads (1978) Computer Music Journal, Vol. 2, No. 2, pp. 61-62 <a target="_blank" href="https://jstor.org/stable/3680222">jstor.org/stable/3680222</a></li>
-                                            <li id="ref12"><b>The Concept of Unity in Electronic Music</b> by Karlheinz Stockhausen (1962) Perspectives of New Music, Vol. 1, No. 1., pp. 39-48 <a target="_blank" href="https://jstor.org/stable/832178">jstor.org/stable/832178</a></li>
-                                            <li id="ref13"><b>Theory of Communication</b> by Dennis Gabor (1943) Journal of the Institution Of Electrical Engineers, Vol. 9, No. 3. <a target="_blank" href="https://granularsynthesis.com/pdf/gabor.pdf">granularsynthesis.com</a></li>
-                                        </ul>
-                                        
-                                    </section>
-                                    
-                                </div>
-                            </article>
+   <head>
+      <meta charset="utf-8" />
+      <title>Granular Synthesis: An Overview</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://joshstovall.com/writing/granular-synthesis/" />
+      <meta name="description" content="An exploration of granular synthesis concepts in musical composition.  Written by Josh Stovall." />
+      <link rel="stylesheet" href="/css/bootstrap.css"  />
+      <link rel="stylesheet" href="/css/theme.css"  />
+      <link rel="stylesheet" href="/css/writing.css"  />
+      <link rel="stylesheet" href="/css/fontawesome/css/all.min.css" />
+      <script type="application/ld+json">
+         {
+         	"@context": "https://schema.org",
+         	"@type": "ScholarlyArticle",
+         	"datePublished": "2018-12-21T08:00:00+08:00",
+         	"author": {
+         		"@type": "Person",
+         		"name": "Josh Stovall",
+         		"url": "https://joshstovall.com"
+         	},
+         	"name": "Granular Synthesis: An Overview",
+         	"description": "A research paper exploring the fundamental acoustic properties of granular syntesis.",
+         	"image": [
+         		"https://joshstovall.com/img/granular-synthesis-overview.webp",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-4.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-5.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-6.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-7.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-12.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-13.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-21.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-22.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-23.png",
+         		"https://joshstovall.com/writing/granular-synthesis/img/fig-24.png"
+         	],
+         	"about": [
+                          "granular synthesis",
+                          "Dennis Gabor",
+                          "Microsound",
+                          "Pulsar synthesis",
+                          "Curtis Roads",
+                          "Iannis Xenakis",
+                          "Helmholtz",
+                          "Cloud Generator",
+                          "Barry Truax",
+                          "window shapes",
+                          "Stockhausen",
+                          "Analogique A et B",
+                          "Trainlet synthesis",
+                          "Glisson Synthesis",
+                          "Four Criteria of Electronic Music"
+         	]
+         }
+      </script>
+   </head>
+   <body>
+      <a id="start"></a>
+      <div class="main-container">
+         <section>
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-8">
+                     <article>
+                        <div class="article__title text-center">
+                           <h1 class="h1">Granular Synthesis: An Overview</h1>
+                           <ol type="I">
+                              <span>December 21<sup>st</sup> 2018 by <a target="_blank" href="http://joshstovall.com">Josh Stovall</a> </span><br>
+                              <span>Professor <a target="_blank" href="https://jamesdemars.net">James DeMars</a></span><br>
+                              <span>Arizona State University</span><br>
+                           </ol>
                         </div>
-                    </div>
-                </div>
-            </section>
-       
-        </div>
-        <!--<div class="loader"></div>-->
-        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-            <i class="fas fa-angle-up"></i>
-        </a>
-        <script src="/js/jquery-3.1.1.min.js"></script>
-        <script src="/js/flickity.min.js"></script>
-        <script src="/js/easypiechart.min.js"></script>
-        <script src="/js/parallax.js"></script>
-        <script src="/js/typed.min.js"></script>
-        <script src="/js/datepicker.js"></script>
-        <script src="/js/isotope.min.js"></script>
-        <script src="/js/ytplayer.min.js"></script>
-        <script src="/js/lightbox.min.js"></script>
-        <script src="/js/granim.min.js"></script>
-        <script src="/js/jquery.steps.min.js"></script>
-        <script src="/js/countdown.min.js"></script>
-        <script src="/js/twitterfetcher.min.js"></script>
-        <script src="/js/spectragram.min.js"></script>
-        <script src="/js/smooth-scroll.min.js"></script>
-        <script src="/js/scripts.js"></script>
-    </body>
+                        <div class="article__body">
+                           <section id="outline">
+                              <h3>Table of Contents</h3>
+                              <ol type="I">
+                                 <li><a href="#introduction">Introduction</a></li>
+                                 <li>
+                                    <a href="#chapter-1">Chapter 1 History</a>
+                                    <ol>
+                                       <li><a href="#1.1">1.1 Dennis Gabor</a></li>
+                                       <li><a href="#1.2">1.2 Iannis Xenakis</a></li>
+                                       <li><a href="#1.3">1.3 Curtis Roads</a></li>
+                                       <li><a href="#1.4">1.4 Barry Truax</a></li>
+                                    </ol>
+                                 </li>
+                                 <li>
+                                    <a href="#chapter-2">Chapter 2 Fundamentals</a>
+                                    <ol>
+                                       <li><a href="#2.1">2.1 Anatomy of a Grain</a></li>
+                                       <li>
+                                          <a href="#2.2">2.2 Grain Window</a>
+                                          <ol>
+                                             <li><a href="#2.2.1">2.2.1 Basic Shapes</a></li>
+                                             <li><a href="#2.2.2">2.2.2 Complex Shapes</a></li>
+                                          </ol>
+                                       </li>
+                                    </ol>
+                                 </li>
+                                 <li>
+                                    <a href="#chapter-3">Chapter 3 Global Organization</a>
+                                    <ol>
+                                       <li>
+                                          <a href="#3.1">3.1 Grain Density</a>
+                                          <ol>
+                                             <li><a href="#3.1.1">3.1.1 Synchronous</a></li>
+                                             <li><a href="#3.1.2">3.1.2 Asynchronous</a></li>
+                                          </ol>
+                                       </li>
+                                       <li><a href="#3.2">3.2 Spatialization</a></li>
+                                    </ol>
+                                 </li>
+                                 <li>
+                                    <a href="#chapter-4">Chapter 4 Techniques</a>
+                                    <ol>
+                                       <li><a href="#4.1">4.1 Change Speed/Pitch Independently</a></li>
+                                       <li><a href="#4.2">4.2 Pulsar Synthesis</a></li>
+                                       <li>
+                                          <a href="#4.3">4.3 Trainlet Synthesis</a>
+                                          <ol>
+                                             <li><a href="#4.3.1">4.3.1 Trainlet Clouds</a></li>
+                                          </ol>
+                                       </li>
+                                       <li><a href="#4.4">4.4 Glisson Synthesis</a></li>
+                                       <li><a href="#4.5">4.5 Spectral Synthesis</a></li>
+                                    </ol>
+                                 </li>
+                                 <li><a href="#conclusion">Conclusion</a></li>
+                                 <li><a href="#references">References</a></li>
+                              </ol>
+                           </section>
+                           <section id="introduction">
+                              <h3>Introduction</h3>
+                              <p>
+                                 Granular synthesis is a term used to describe anything that processes audio using granulation: the division of sound into tiny microacoustic events, called grains. Grains can be thought of as the molecular “atoms” that make up sound. After a sound is broken into tiny grains, they can then be redistributed and reorganized to form new sounds. Granular synthesis is perceived as a relatively recent development in sound synthesis, but it can also be seen as a reflection of long-standing ideas about the nature of sound.
+                              </p>
+                           </section>
+                           <section id="chapter-1">
+                              <h3>Chapter 1 History</h3>
+                              <section id="1.1">
+                                 <h4>1.1 Dennis Gabor</h4>
+                                 <p>
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Dennis_Gabor">Dennis Gabor</a> was first to conceptualize granular synthesis in 1946, in his <i><a target="_blank" href="http://granularsynthesis.com/pdf/gabor.pdf">Theory of Communication</a></i>.<sup><a href="#ref13">13</a></sup>
+                                    Although the notion that a perceived continuous phenomena can be subdivided into particles traces back to Greek philosophers, the modern scientific theory of <a target="_blank" href="https://en.wikipedia.org/wiki/Microsound">microsound</a> dates back to Gabor, who applied the concept of an acoustic quantum to the threshold of human hearing.
+                                    The original intent of his study was to reduce the amount of data required for human audio communication, necessitated by the low band width but rising use of <a target="_blank" href="https://en.wikipedia.org/wiki/Telecommunication">telecommunication</a> in the 1940s.<sup><a href="#ref1">1</a></sup>
+                                    Nonetheless, his theories made their way into the world of music composition as the basis for granular synthesis.
+                                 </p>
+                              </section>
+                              <section id="1.2" >
+                                 <h4>1.2 Iannis Xenakis</h4>
+                                 <p>
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Iannis_Xenakis">Iannis Xenakis</a> came across Gabor's research and began to implement these concepts into his music.
+                                    Xenakis had previously used the idea of “points” of sound in his compositions for orchestra, although it was not until 1959 that Xenakis modified a <a target="_blank" href="https://en.wikipedia.org/wiki/Reel-to-reel_audio_tape_recording">reel to reel tape recorder</a> to realize true microacoustic granular synthesis.
+                                    This process involved splicing magnetic tape into tiny segments, rearranging the segments, and taping the new string of segments together.
+                                 </p>
+                                 <p>
+                                    His first complete work to use granular synthesis techniques was <i>Analogique A et B</i>.
+                                    <i>Analogique B</i> is the granular synthesis part of <i>Analogique A-B</i>, and is written to be played simultaneously with <i>Analogique A</i>. <i>Analogique B</i> consists of four tracks to be played through 8 speakers around the concert hall.
+                                    Xenakis states that each grain has a threefold nature: duration, frequency and intensity.
+                                 </p>
+                                 <figure id="fig1">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/fHKTs4VtKDU"></iframe>
+                                    <figcaption>Figure 1. Xenakis on periodicity.</figcaption>
+                                 </figure>
+                                 <blockquote>
+                                    <p>
+                                       &ldquo;All sound, even continuous musical variation, is conceived as an assemblage of a large number of elementary sounds adequately disposed in time. In the attack, body, and decline of a complex sound, thousands of pure sounds appear in a more or less short interval of time. We are in a kind of continuum form, say, usual objects of music that are inaudible, but which produce these events on a higher level.&rdquo;
+                                    </p>
+                                    <span>&mdash; Iannis Xenakis</span>
+                                 </blockquote>
+                              </section>
+                              <section id="1.3">
+                                 <h4>1.3 Curtis Roads</h4>
+                                 <p>
+                                    After attending a lecture by Xenakis on this topic, <a target="_blank" href="https://curtisroads.net/">Curtis Roads</a> began experimenting.
+                                    Roads was the first to realize granular synthesis using a computer in 1975.
+                                    His first experiments were extremely time consuming, taking weeks to render a one minute mono sound.
+                                    Roads expanded on the ideas of Xenakis and his research has led to much of the current work based on granular synthesis.
+                                    Roads has created many granular synthesis computer programs, notably <i>Cloud Generator</i> which is designed to teach users about granular synthesis.
+                                 </p>
+                                 <figure id="fig2">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://youtube.com/embed/MsaHoBjfTMY"></iframe>
+                                    <figcaption>Figure 2. Curtis Roads on his first granular composition.</figcaption>
+                                 </figure>
+                              </section>
+                              <section id="1.4">
+                                 <h4>1.4 Barry Truax</h4>
+                                 <p>
+                                    Inspired by an article on granular synthesis written by Roads,
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Barry_Truax">Barry Truax</a> began developing a method to create granular synthesis in real-time, first realized in 1986 in his work <a target="_blank" href="https://www.sfu.ca/~truax/river.html"><i>Riverrun</i></a>.
+                                    It is based on synthesized grains which are either simple waveforms or FM signals.
+                                 </p>
+                                 <blockquote>
+                                    <p>
+                                       &ldquo;
+                                       Curtis Roads had done it in non-real time, heroically, hundreds of hours of calculation time on mainframes, just to get a few seconds of sound. He had done that, but it remained a textbook case. As soon as I started working with it in real time and heard the sound, it was rich, it was appealing to the ear, immediately, even with just sine waves as the grains. Suddenly they came to life. They had a sense of what I now call volume, as opposed to loudness. They had a sense of magnitude, of size, of weight, just like sounds in the environment do. And it’s not I think coincidental that the first piece I did in 1986 called Riverrun which was the first piece realized entirely with real-time granular synthesis.
+                                       &rdquo;
+                                    </p>
+                                    <span>&mdash; Barry Truax <sup><a href="#ref2">2</a></sup></span>
+                                 </blockquote>
+                                 <figure id="fig3">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/u81IGEFt7dM"></iframe>
+                                    <figcaption>Figure 3. <i>Riverrun</i> by Barry Truax (1986)</figcaption>
+                                 </figure>
+                              </section>
+                           </section>
+                           <section id="chapter-2">
+                              <h3>Chapter 2 Fundamentals</h3>
+                              <section id="2.1">
+                                 <h4>2.1 Anatomy of a Grain</h4>
+                                 <p>
+                                    A grain is a short “atom” of sound lasting 1 – 100 ms.
+                                    Contents of a grain can be sampled audio or synthesized sound waves.
+                                    From that source, a grain of sound is retrieved.
+                                    There are three parameters a composer can use to manipulate the contents of a grain: the retrieval point from the source, the duration of the grain, and the playback speed.
+                                 </p>
+                                 <figure id="fig4">
+                                    <img alt="A grain" src="img/fig-4.png"/>
+                                    <figcaption>Figure 4.  A grain.</figcaption>
+                                 </figure>
+                              </section>
+                              <section id="2.2">
+                                 <h4>2.2 Grain Window</h4>
+                                 <p>
+                                    Grains have amplitude fades at their beginning and end, fundamentally to eliminate artifacts in the audio signal.
+                                    If a waveform is sliced anywhere other than a zero-crossing point, there will be an audible popping sensation.
+                                    However, since the envelope shape can also have a significant effect on the sound grain, it can be used creatively as a way to shape the sound.
+                                    The shape of these fades is called the “window” or envelope.
+                                 </p>
+                                 <figure id="fig5">
+                                    <img alt="Grain window" src="img/fig-5.png"/>
+                                    <figcaption>Figure 5. Grain window.</figcaption>
+                                 </figure>
+                                 <div class="row ">
+                                    <div class=" col-12 col-sm-6">
+                                       <section id="2.2.1"  class="col-12 ">
+                                          <h5>2.2.1 Basic Window Shapes</h5>
+                                          <div class="row">
+                                             <p class="col-6 col-sm-12">
+                                                Basic window shapes have fades at the beginning and end of the envelope.
+                                                The slope of each fade can be manipulated. The duration of the envelope can also be manipulated.
+                                             </p>
+                                             <figure id="fig6" class="col-6 col-sm-12">
+                                                <img alt="Grain window" src="img/fig-6.png"/>
+                                                <figcaption>Figure 6. Basic window shapes.<sup><a href="#ref3">3</a></sup></figcaption>
+                                             </figure>
+                                          </div>
+                                       </section>
+                                    </div>
+                                    <div class=" col-12 col-sm-6">
+                                       <section id="2.2.2">
+                                          <h5>2.2.2 Complex Shapes</h5>
+                                          <div class="row">
+                                             <p class="col-6 col-sm-12">
+                                                Complex window shapes are rather new to the idea of granular synthesis.
+                                                They consist of two envelopes.
+                                                <a href="#fig6">Figure 6</a> shows an example where the first envelope is a sine type wave.
+                                                Over the sine wave is placed another wave, any type of linear or exponential wave is adequate.
+                                             </p>
+                                             <figure  class="col-6 col-sm-12">
+                                                <img alt="Grain window" src="img/fig-7.png"/>
+                                                <figcaption>Figure 7. Complex Window Shape.</figcaption>
+                                             </figure>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </div>
+                                 <figure id="fig8">
+                                    <!-- fix this-->
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Mb4EEWedQKM"></iframe>
+                                    <figcaption>Figure 8. Grain window demonstration <a target="blank" href="https://youtu.be/Mb4EEWedQKM">Source</a></figcaption>
+                                 </figure>
+                              </section>
+                           </section>
+                           <section id="chapter-3">
+                              <h3>Chapter 3 Global Organization</h3>
+                              <p>
+                                 <i>Global organization</i> will refer to the organization of grains, specifically how they are arranged in time and space.
+                                 There are a seemingly infinite number of ways to arrange these acoustic particles.
+                                 Grains can be played back in different order, overlapping, coming from many speaker locations, really any imaginable configuration.
+                                 Due to this, granular synthesis requires a massive amount of control data.
+                              </p>
+                              <blockquote>
+                                 <p>
+                                    &ldquo;
+                                    If <b>n</b> is the number of parameters per grain, and <b>d</b> is the density of grains per second, it takes <b>n</b> times <b>d</b> parameter values to specify one second of sound.
+                                    Since <b>n</b> is usually greater than ten and <b>d</b> can exceed one thousand, it is clear that a global unit of organization is necessary for practical work.
+                                    &rdquo;
+                                 </p>
+                                 <span>&mdash; Curtis Roads <sup><a href="#ref4">4</a></sup></span>
+                              </blockquote>
+                              <p>
+                                 The major differences between the various granular techniques are found in these global organizations and algorithms.
+                              </p>
+                              <figure id="fig8">
+                                 <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/kqUNLIjCSrs"></iframe>
+                                 <figcaption>Figure 8. Xenakis on probabilities.</figcaption>
+                              </figure>
+                              <section id="3.1">
+                                 <h4>3.1 Grain Density</h4>
+                                 <p>
+                                    Grain density refers to the number of grains per second.
+                                    It is frequency in which grains are produced.
+                                    For example if the density is specified at 200 g/s, then 200 grains will be randomly (or statistically) distributed throughout that second.
+                                    “A one-second cloud containing twenty 100 ms grains is continuous and opaque, whereas a cloud containing twenty 1 ms grains is sparse and transparent. 
+                                    The difference between these two cases is their fill factor. The fill factor of a cloud is the product of its density and its grain duration in seconds.” <sup><a href="#ref5">5</a></sup>
+                                    For a typical grain duration of 25 ms, we can make the following observations concerning grain density as it crosses perceptual thresholds.
+                                 </p>
+                                 <figure>
+                                    <table title="Synchronous granular synthesis">
+                                       <tr>
+                                          <th>Grains per second</th>
+                                          <th>Perception</th>
+                                       </tr>
+                                       <tr>
+                                          <td>< 15</td>
+                                          <td>Rhythmic sequences.</td>
+                                       </tr>
+                                       <tr>
+                                          <td>15-25</td>
+                                          <td>Fluttering, sensation of rhythm disappears.</td>
+                                       </tr>
+                                       <tr>
+                                          <td>25-50</td>
+                                          <td>Grain order disappears. As density increases, we no longer perceive an acceleration of tempo, rather an increase in the flow of grains.</td>
+                                       </tr>
+                                       <tr>
+                                          <td>50-100</td>
+                                          <td>Texture band.  If the bandwidth is greater than a semitone, we cannot discern individucal frequencies.</td>
+                                       </tr>
+                                       <tr>
+                                          <td>> 100</td>
+                                          <td>Continuous sound mass. No space between grains. In some cases, resembles reverberation.</td>
+                                       </tr>
+                                    </table>
+                                    <figcaption>Figure 9. Result of various grain densities.<sup><a href="#ref6">6</a></sup></figcaption>
+                                 </figure>
+                                 <section id="3.1.2">
+                                    <h5>3.1.2 Synchronous</h5>
+                                    <p>
+                                       <i>Synchronous</i> granular synthesis implies that the time difference between successive grains, or the <i>hop size</i> — is constant.
+                                       The spacing between the grains in granular synthesis can radically change the texture that is created.
+                                       A very low density will produce a rhythmic effect.
+                                       Once the density reaches a certain level the rhythmic effect will morph into a pitched effect.
+                                       The frequency produced is the reciprocal of the hop size, which acts as the period of a periodic waveform.
+                                       The grain duration is so short that the frequency of the waveform within the grain affects the spectrum, but will not change the fundamental pitch of the sound.
+                                       Roads writes that “synchronous granular synthesis is very closely related to Formant Synthesis”.<sup><a href="#ref7">7</a></sup>
+                                    </p>
+                                    <figure id="fig12">
+                                       <img alt="Synchronous granular synthesis" src="img/fig-12.png"/>
+                                       <figcaption>Figure 10. Synchronous granular synthesis. - <a target="_blank" href="https://www.sfu.ca/~truax/gran.html">Source</a></figcaption>
+                                    </figure>
+                                 </section>
+                                 <section id="3.1.2">
+                                    <h5>3.1.2 Asynchronous</h5>
+                                    <p>
+                                       <i>Asynchronous</i> granular synthesis produces <i>grain clouds</i> by scattering grains in a statistical manner over a specified duration.
+                                       It abandons the concept of linear streams of grains and instead, disperses grains within regions on the time-frequency plane.
+                                       The starting time and frequency of each grain can be randomized or controlled through algorithms.
+                                       Asynchronous granular synthesis typically produces noise textures, rather than pitch.
+                                       However, it can be perceived often as more of a continuum.
+                                       Roads writes:
+                                    </p>
+                                    <blockquote>
+                                       <p>&ldquo;Some grains may overlap, leaving silences at other points in the cloud. Using 20 ms grains, it takes about 100 grains to cover a one-second cloud. Tiny gaps (less than 50 ms) do not sound as silences, but rather as fluctuations of amplitude.&rdquo;</p>
+                                    </blockquote>
+                                    <figure id="fig13">
+                                       <img alt="Grain clouds" src="img/fig-13.png"/>
+                                       <figcaption>Figure 11. Grain Clouds - <a target="_blank" href="http://sites.music.columbia.edu/cmc/MusicAndComputers/chapter4/04_08.php">Source</a></figcaption>
+                                    </figure>
+                                    <figure>
+                                       <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/r5EVPZoCg_U"></iframe>
+                                       <figcaption>Figure 12. Curtis Roads on <i>Cloud Generator</i></figcaption>
+                                    </figure>
+                                    <p>By increasing the grain density, we saturate the texture, creating effects that depend on the bandwidth.<sup><a href="#ref10">10</a></sup></p>
+                                    <ul class="bullets">
+                                       <li><b><i>Narrow bands</i></b> and high densities generate pitched streams with formant spectra.</li>
+                                       <li><b><i>Medium bands</i></b> (several semitones) and high densities generate turgid colored noise.</li>
+                                       <li><b><i>Wide bands</i></b> (octave or more) and high densities generate massive clouds of sound.</li>
+                                    </ul>
+                                    <figure id="fig14">
+                                       <img hidden alt="Result of various grain densities" src="img/fig-14.png"/>
+                                       <table>
+                                          <tr>
+                                             <th>Grain Duration</th>
+                                             <th>Modulation Frequency</th>
+                                             <th>Perceived Effect</th>
+                                          </tr>
+                                          <tr>
+                                             <td>200 usec</td>
+                                             <td>5 KHz</td>
+                                             <td>Noisy particulate disintegration</td>
+                                          </tr>
+                                          <tr>
+                                             <td>500 usec</td>
+                                             <td>2 KHz</td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>1 ms</td>
+                                             <td>1 KHz</td>
+                                             <td>Loss of pitch</td>
+                                          </tr>
+                                          <tr>
+                                             <td>10 ms</td>
+                                             <td>100 Hz</td>
+                                             <td>Fluttering, gurgling</td>
+                                          </tr>
+                                          <tr>
+                                             <td>50 ms</td>
+                                             <td>20 Hz</td>
+                                             <td>Stable pitch formation</td>
+                                          </tr>
+                                          <tr>
+                                             <td>100 ms</td>
+                                             <td>10 Hz</td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>200 ms</td>
+                                             <td>5 Hz</td>
+                                             <td>Aperiodic tremolo, jittering</td>
+                                          </tr>
+                                       </table>
+                                       <figcaption>Figure 13. Result of various grain densities.</figcaption>
+                                       <!-- Effects of grain durations in asynchronous granular synthesis -->
+                                    </figure>
+                                 </section>
+                              </section>
+                              <section id="3.2">
+                                 <h4>3.2 Spatialization</h4>
+                                 <p>
+                                    Not only can we distribute grains along the time but also the space, the <a target="_blank" href="https://en.wikipedia.org/wiki/Spacetime">space-time continuum</a>.
+                                    When grains scatter to a unique locations, the cloud manifests a vivid “three-dimensional spatial morphology”.<sup><a href="#ref11">11</a></sup>
+                                    This is evident even in a stereophonic configuration.
+                                    Spacial location can be manipulated through panning, and spacial depth can be created through reverb amount, volume, and low-pass to create the perception of distance.
+                                    In <a href="#fig14">Figure 14</a>, the x-axis = panorama, y-axis = pitch modulation, and z-axis = sample reading position.
+                                 </p>
+                                 <figure id="fig14">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/b5xZ5Urc3kY"></iframe>
+                                    <figcaption>Figure 14. Granular spatialization. <a target="blank" href="https://youtu.be/b5xZ5Urc3kY">Source</a></figcaption>
+                                 </figure>
+                                 <figure id="fig15">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/OkVMBmyRywg"></iframe>
+                                    <figcaption>Figure 15. Stockhausen on space.</figcaption>
+                                 </figure>
+                              </section>
+                           </section>
+                           <section id="chapter-4">
+                              <h3>Chapter 4 Granular Techniques</h3>
+                              <p>
+                                 This chapter will explore practical applications and compositional techniques of granular synthesis.
+                              </p>
+                              <section id="4.1">
+                                 <h4>4.1 Change Speed/Pitch Independently</h4>
+                                 <p>
+                                    Granular synthesis allows us to stretch or compress audio, independent of pitch. Before the use of computers, analogue tape decks could be used to speed up or slow down sounds, however this also caused the pitch to shift. Slowing down audio would literally stretch out the frequency of the waveform. This all changed with the advent of computer technology.
+                                 </p>
+                                 <p>
+                                    The ability to change a sound’s speed without affecting pitch, or vice-versa, is a possible using granular synthesis. With tape, one could stretch a sound, but to maintain the frequency of a wave while stretching it (in theory) would create gaps between the grains. The only way to fill these gaps was to stretch the grains themselves, thus lowering the pitch. By implementing granular synthesis techniques we can alter a sound’s atomic makeup. We can fill the gaps by looping nearby grains.
+                                 </p>
+                                 <p>
+                                    Figure 17 shows Stockhausen describing this process in 1972, before it was actually possible.
+                                    Figure 18 shows a modern demonstration of this technique, using Logic Pro X.
+                                 </p>
+                                 <figure id="fig17">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/pw1-RI_jqJ0"></iframe>
+                                    <figcaption>Figure 17. Excerpt from Four Criteria for Electronic Music.<sup><a href="#ref2">2</a></sup></figcaption>
+                                 </figure>
+                                 <figure id="fig18">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/7rIZNGjiokM"></iframe>
+                                    <figcaption>Figure 18. Time stretching with granular synthesis. <sup><a target="blank" href="https://youtu.be/MfWgzjUC-l0">Source</a></sup></figcaption>
+                                 </figure>
+                              </section>
+                              <section id="4.2">
+                                 <h4>4.2 Pulsar Synthesis</h4>
+                                 <p>
+                                    <i>Pulsar synthesis</i> is a method of sound synthesis based on the generation of electronic pulses and pitched tones.
+                                    Pioneers of pulsar synthesis include <a target="_blank" href="https://en.wikipedia.org/wiki/Karlheinz_Stockhausen">Karlheinz Stockhausen</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Gottfried_Michael_Koenig">Gottfried Michael Koenig</a>.<sup><a href="#ref12">12</a></sup>
+                                    Pulsar synthesis can produce either rhythms or tones as it crosses perceptual time spans.
+                                 </p>
+                                 <blockquote>
+                                    <p>
+                                       &ldquo;
+                                       It is necessary that the strength of the vibrations of the air for very low tones should be extremely greater than for high tones. The increase in strength...is of special consequence in the deepest tones...To discover the limit of the deepest tones it is necessary not
+                                       only to produce very violent agitations of the air but to give these a simply pendular motion.
+                                       &rdquo;
+                                    </p>
+                                    <span>&mdash; Hermann von Helmholtz (1885)</span>
+                                 </blockquote>
+                                 <p>
+                                    Thus to perceive this transition between time layers, pulses must be strong.
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Hermann_von_Helmholtz">Helmholtz</a> observed that a sense of continuity is perceived between 24 to 28 Hz, but that the impression of a definite pitch does not take hold until 40Hz.<sup><a href="#ref13">13</a></sup>
+                                    I find this fascinating, and a key ingredient to pulsar synthesis.
+                                    If music is all about tension and release, this is what makes pulsar synthesis music.
+                                    Stockhausen formulated a theory of the continuum between rhythm and pitch, that is, between infrasonic frequencies and the audible frequencies of short-duration impulses.
+                                 </p>
+                                 <p>
+                                    While pulsar synthesis is not “granular” per se (using sampled audio), these concepts are fundamental to understanding granular possibilities regarding the time domain.
+                                    By transposing rhythms into the audible frequency range, Stockhausen could build un-pitched noises from aperiodic sequences of impulses.
+                                    He distinguishes twenty-one time octaves spanning the durations from 1/16th of a second to one hour, which constitute the range of perceivable events music composition.<sup><a href="#ref14">14</a></sup>
+                                 </p>
+                                 <p>
+                                    <strike hidden>
+                                    Figure 20 is an excerpt from <i>Kontakte</i>, demonstrating this technique.
+                                    </strike>
+                                    Roads builds upon and illustrates this theory in <i>Microsound</i> (Figure 21).
+                                 </p>
+                                 <figure id="fig19">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Ytq6A1sx1JY"></iframe>
+                                    <figcaption>Figure 19. The splitting of the sound.</figcaption>
+                                 </figure>
+                                 <figure id="fig20">
+                                    <img alt="Time domain in Microsound by Curtis Roads" src="img/fig-21.png"/>
+                                    <figcaption>Figure 21. Time Scales of Music (Curtis Roads, <i>Microsound</i>)</figcaption>
+                                 </figure>
+                              </section>
+                              <section id="4.3">
+                                 <h4>4.3 Trainlet Synthesis</h4>
+                                 <p>
+                                    <i>Trainlet synthesis</i> consists of a brief series (or <i>train</i>) of grains.
+                                    It is based upon the basic principles of pulsar synthesis.
+                                    However it uses grains of sound rather than electronic pulses.
+                                    A <i>train</i> is described as the unit of musical organization on the time scale of notes and phrases.
+                                    A train can last anywhere from a few hundred milliseconds to a minute or more.<sup><a href="#ref16">16</a></sup>
+                                 </p>
+                                 <p>
+                                    <a href="fig22">Figure 22</a> shows a single grain (<i>d</i>) followed by silence (<i>s</i>).
+                                    The total duration is <i><b>p = d + s</b></i>, where <i>p</i> is the period, <i>d</i> is the duty cycle, and <i>s</i> is silent.
+                                    Both <i>p</i> and <i>d</i> are continuously variable quantities.
+                                    They are controlled by separate envelope curves that span a train of pulsars.
+                                    Repetitions of the period form a train.
+                                    They can be periodic or aperiodic, creating tones or noises.
+                                    Trainlet synthesis generates rhythmically structured crossbred sampled sounds.
+                                 </p>
+                                 <figure id="fig22">
+                                    <img alt="Pulse train" src="img/fig-22.png"/>
+                                    <figcaption>Figure 22. Pulse train.<sup><a href="#ref1">1</a></sup></figcaption>
+                                 </figure>
+                                 <section id="4.3.1">
+                                    <h4>4.3.1 Trainlet Clouds</h4>
+                                    <p>
+                                       If grains all have a similar frequency, the result is a musical pitch&mdash;but as the frequencies of the grains are spread over a larger range, the result becomes a broad band noise, much like the natural textures of wind and water.
+                                       These sounds create a remarkable sense of space and volume. Similarly, if the durations of the grains are all similar, the frequency spectrum and timbre of the resulting sound is much richer because of the phenomenon of amplitude modulation.
+                                       In addition, when a short delay is placed between grains and then increased, the fused granular texture begins to "pull apart" as isolated events emerge perceptually from the texture and eventually establish rhythmic relations.
+                                       Once global amplitude contours are added along with spatial deployment, we have replicated all of the basic acoustic properties of sound.
+                                    </p>
+                                    <figure id="fig23">
+                                       <img alt="Trainlet cloud" src="img/fig-23.png"/>
+                                       <figcaption>Figure 23. Trainlet cloud of grains.</figcaption>
+                                    </figure>
+                                 </section>
+                              </section>
+                              <section id="4.4">
+                                 <h4>4.4 Glisson Synthesis</h4>
+                                 <div class="row">
+                                    <p class="col-12 col-sm-6  col-lg-6">
+                                       <i>Glisson synthesis</i> is a technique inspired by Xenakis describing each grain as a vector, rather than a point.
+                                       Each individual particle has an independent frequency trajectory.
+                                       Glisson synthesis scatters particles on the time-frequency plane, either synchronously or asynchronously bounded by time, frequency, and amplitude.
+                                    </p>
+                                    <figure id="fig24" class="col-12 col-sm-6  col-lg-6">
+                                       <img alt="Trainlet cloud" src="img/fig-24.png"/>
+                                       <figcaption>Figure 24. Glisson grains.</figcaption>
+                                    </figure>
+                                 </div>
+                                 <figure id="fig25">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/YdV6b1gLe2Y"></iframe>
+                                    <figcaption>Figure 25. Glissandi Grains Example. - Source</figcaption>
+                                 </figure>
+                              </section>
+                              <section id="4.5">
+                                 <h4>4.5 Spectral Grain Synthesis</h4>
+                                 <p>
+                                    <i>Spectral grain synthesis</i> is a method to manipulate timbre.
+                                    It allows for the altering of formant regions through the addition of sinusoidal grains.
+                                    The frequencies can also be manipulated, snapped or stretched from the harmonic series.
+                                    This allows for pitched sounds to dissolve into noise.
+                                 </p>
+                                 <figure id="fig26">
+                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ZfzsN1c-JCk"></iframe>
+                                    <figcaption>Figure 26. Spectral grain demonstration. <a target="blank" href="https://youtu.be/Mb4EEWedQKM">Source</a></figcaption>
+                                 </figure>
+                              </section>
+                           </section>
+                           <section id="conclusion">
+                              <h3>Conclusion</h3>
+                              <p>
+                                 Granular synthesis allows composers to to create textures unlike anything which exist in the past.
+                                 Composers can now compose below the note level.
+                                 It allows for the real time construction and deconstruction of sound, which can be a formal compositional element.
+                                 The advent of computer technology has allowed for the manipulation of sound down to the microacoustic level.
+                                 There is still a world of possibilities to be explored.
+                              </p>
+                              <figure>
+                                 <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/XwslRulRbSo"></iframe>
+                                 <figcaption>Figure 27. Curtis Roads on granular synthesis.</figcaption>
+                              </figure>
+                              <blockquote>
+                                 <p>
+                                    &ldquo;
+                                    The basis of granular synthesis in the seemingly trivial grain has had a powerful effect on my way of thinking about sound.
+                                    It clearly juxtaposes the micro and macro levels, as the richness of the latter lies in stark contrast to the insignificance of the former.
+                                    Moreover, the range of densities obtainable, from the low levels associated with human gestures through those perceived as rapid and virtuosic, culminating with entirely fused textures, suggests a scale of composition ranging from human proportions to abstract.
+                                    Finally, in terms of the theme of sound and structure, it is clear that the two are inseparable with this technique.
+                                    The macro level structure is best described in terms of its component sounds, and the resulting sound complex is definable only in terms of the structural levels that characterize its organization.
+                                    &rdquo;
+                                 </p>
+                                 <span>&mdash; Barry Truax (1990) </span><sup><a href="#ref8">8</a></sup>
+                              </blockquote>
+                              <blockquote>
+                                 <p>
+                                    &ldquo;
+                                    It seems that a new type of musician is necessary, an ‘artist-conceptor’ of new, abstract, and free forms, tending towards complexities, and the towards generalizations on several levels of sound organization.
+                                    The artist-conceptor would have to be knowledgable in such varied domains as mathematics, logic, physics, chemistry, biology, genetics, paleontology (for the evolutions of forms), the humanities and history;
+                                    in short, a sort of universality, but on based upon, guided by and oriented toward forms and architectures.
+                                    &rdquo;
+                                 </p>
+                                 <span>&mdash; Iannis Xenakis (1985)</span>
+                              </blockquote>
+                              <figure>
+                                 <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/vhnldRhOs8M"></iframe>
+                                 <figcaption>Figure 28. Stockhausen on perception.</figcaption>
+                              </figure>
+                           </section>
+                           <section id="references">
+                              <h3>References</h3>
+                              <ul>
+                                 <li id="ref1" ><b>Microsound</b> by Curtis Roads (2001)</li>
+                                 <li id="ref2" ><b>Four Criteria of Electronic Music</b> by Karlheinz Stockhausen (1971) <a target="_blank" href="https://youtu.be/7xyGtI7KKIY">youtube.com</a></li>
+                                 <li id="ref3" ><b>From Grains to Forms</b> by Curtis Roads (2012) University of California, Santa Barbara, May 2012 <a target="_blank" href="http://cdmc.asso.fr/sites/default/files/texte/pdf/rencontres/intervention16_xenakis_electroacoustique.pdf">cdmc.asso.fr</a></li>
+                                 <li id="ref4" ><b>The Evolution of Granular Synthesis: An Overview of Current Research</b> by Curtis Roads (2006) Symposium on Legacies of Iannis Xenakis <a target="_blank" href="https://pdfs.semanticscholar.org/36ea/94a82ce58abee7102e6a6cf45ac86c41c888.pdf">semanticscholar.org</a></li>
+                                 <li id="ref5" ><b>Creation of a Real-Time Granular Synthesis Instrument for Live Performance</b> by T. T. Opie (2003) Queensland University of Technology <a target="_blank" href="https://eprints.qut.edu.au/15865/">qut.edu.au</a></li>
+                                 <li id="ref6" ><b>Time Shifting and Transposition with a Real-Time Granulation Technique</b> by Barry Truax (1994) Computer Music Journal, Vol. 18, No. 2, pp. 38-48 <a target="_blank" href="https://jstor.org/stable/3680442">jstor.org/stable/3680442</a></li>
+                                 <li id="ref7" ><b>An Interview with Barry Truax</b> by Toru Iwatake & B. Truax (1994) Computer Music Journal, Vol. 18, No. 3, pp. 17-24 <a target="_blank" href="https://jstor.org/stable/3681181">jstor.org/stable/3681181</a></li>
+                                 <li id="ref8" ><b>Composing with Real-Time Granular Sound</b> by Barry Truax (1990) Perspectives of New Music, Vol. 28, No. 2, pp. 120-134 <a target="_blank" href="https://jstor.org/stable/833014">jstor.org/stable/833014</a></li>
+                                 <li id="ref9" ><b>Introduction to Granular Synthesis</b> by Curtis Roads (1988) Computer Music Journal, Vol. 12, No. 2, pp. 11-13 <a target="_blank" href="https://jstor.org/stable/3679937">jstor.org/stable/3679937</a></li>
+                                 <li id="ref10"><b>Real-Time Granular Synthesis with a Digital Signal Processor</b> by Barry Truax (1988)  Computer Music Journal, Vol. 12, No. 2, pp. 14-26 <a target="_blank" href="https://jstor.org/stable/3679938">jstor.org/stable/3679938</a></li>
+                                 <li id="ref11"><b>Automated Granular Synthesis of Sound</b> by Curtis Roads (1978) Computer Music Journal, Vol. 2, No. 2, pp. 61-62 <a target="_blank" href="https://jstor.org/stable/3680222">jstor.org/stable/3680222</a></li>
+                                 <li id="ref12"><b>The Concept of Unity in Electronic Music</b> by Karlheinz Stockhausen (1962) Perspectives of New Music, Vol. 1, No. 1., pp. 39-48 <a target="_blank" href="https://jstor.org/stable/832178">jstor.org/stable/832178</a></li>
+                                 <li id="ref13"><b>Theory of Communication</b> by Dennis Gabor (1943) Journal of the Institution Of Electrical Engineers, Vol. 9, No. 3. <a target="_blank" href="https://granularsynthesis.com/pdf/gabor.pdf">granularsynthesis.com</a></li>
+                              </ul>
+                           </section>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!--<div class="loader"></div>-->
+      <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+      <i class="fas fa-angle-up"></i>
+      </a>
+      <script src="/js/jquery-3.1.1.min.js"></script>
+      <script src="/js/flickity.min.js"></script>
+      <script src="/js/easypiechart.min.js"></script>
+      <script src="/js/parallax.js"></script>
+      <script src="/js/typed.min.js"></script>
+      <script src="/js/datepicker.js"></script>
+      <script src="/js/isotope.min.js"></script>
+      <script src="/js/ytplayer.min.js"></script>
+      <script src="/js/lightbox.min.js"></script>
+      <script src="/js/granim.min.js"></script>
+      <script src="/js/jquery.steps.min.js"></script>
+      <script src="/js/countdown.min.js"></script>
+      <script src="/js/twitterfetcher.min.js"></script>
+      <script src="/js/spectragram.min.js"></script>
+      <script src="/js/smooth-scroll.min.js"></script>
+      <script src="/js/scripts.js"></script>
+   </body>
 </html>
