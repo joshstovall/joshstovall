@@ -46,45 +46,9 @@ figcaption {
 	min-height: auto
 }
 
-ol {
-	padding-left: 20px;
-	list-style-type: none !important
-}
-
-ol, li {
-	margin-bottom: 0 !important
-}
-
-ol li {
-	font-weight: 900 !important
-}
-
-ol li>ol li, ol li>ol li a {
-	font-weight: 500 !important
-}
-
 section {
 	padding-bottom: 1em;
 	padding-top: 1em
-}
-
-h3 {
-	font-weight: 800;
-	margin-bottom: 0.1em;
-	font-size: 1.6em !important
-}
-
-h4 {
-	font-weight: 600;
-	padding-bottom: 0em;
-	margin-bottom: 0.6em;
-}
-
-h5 {
-	font-weight: 400;
-	padding-bottom: 0em !important;
-	margin-bottom: 0.1em !important;
-	font-size: 1.4em !important;
 }
 
 article .article__body p, article .article__body ul {
@@ -136,4 +100,8 @@ figure img {
 .menu-horizontal a {
     padding-left: 0;
     padding-right: 7px;
+}
+
+.col-12 p {
+	padding-bottom:1em
 }
