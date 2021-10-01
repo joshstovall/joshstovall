@@ -31,21 +31,6 @@ img {
 	margin-bottom: 0 !important;
 }
 
-.fig {
-	font-size: 1em;
-	text-align: center !important;
-	font-weight: 600;
-}
-
-figcaption {
-	text-align: center
-}
-
-#reception iframe {
-	margin-bottom: 0 !important;
-	min-height: auto
-}
-
 section {
 	padding-bottom: 1em;
 	padding-top: 1em
@@ -104,4 +89,8 @@ figure img {
 
 .col-12 p {
 	padding-bottom:1em
+}
+
+.text-block span {
+    display: block;
 }
