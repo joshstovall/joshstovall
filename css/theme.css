@@ -2063,7 +2063,7 @@ form + span.type--fine-print{margin-top:1.0833333333333em;display:inline-block}
 .form--inline button{max-width:200px}
 .bg--dark .form--inline > span.h4,.imagebg:not(.image--light) .form--inline > span.h4{color:#fff}
 button,input[type="submit"]{height:3.25em}
-button.btn,input[type="submit"].btn{font-size:.85714286em;font-weight:700;padding-left:0;padding-right:0}
+button.btn,input[type="submit"].btn{/*font-size:.85714286em;font-weight:700;padding-left:0;padding-right:0*/}
 button.btn.btn--primary,input[type="submit"].btn.btn--primary{color:#fff}
 button.btn.type--uppercase,input[type="submit"].btn.type--uppercase{letter-spacing:.5px;margin-right:-.5px}
 button.checkmark.checkmark--cross,input[type="submit"].checkmark.checkmark--cross{width:1.85714286em;height:1.85714286em;border:none;background:#e23636}
