@@ -153,7 +153,15 @@ mr = (function (mr, $, window, document) {
 
     var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
     if (path.includes('writing') || path.includes('projects') || path.includes('code') || path.includes('resume')) {
-        $("#start").load("/modules/header.html");
+        $("#start").load("/modules/header.html", function() {
+            $('#openMenu').on('click', function () {
+               $('#menu').show()
+            });
+            $('#closeMenu').on('click', function () {
+                $('#menu').hide()
+             });
+          });
+
     }
 
     $("body").append($('<div>').load('/modules/footer.html'));

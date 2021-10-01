@@ -2663,3 +2663,86 @@ span i {font-size:1em;		}
 .menu-horizontal li.social{
 	margin-right:0.5em;
 }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+body {
+	background-color:#252525;
+}
+p{
+	color:#FFF !important;
+}
+.text-block *{
+	color:#FFF !important;
+}
+hr {
+    border-color: #ececec3d;
+}
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+
+#menu{
+	position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+	display: none;
+}
+.menu-items{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.menu-items a {
+	display:block;
+	font-size:2em;
+	font-weight: 200;
+	padding:1em
+}
+ #closeMenu {
+	position:fixed;
+	top:1em;
+	right:1em;
+	z-index: 1;
+	cursor:pointer;
+	font-size:2em;
+	 
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#closeMenu i {
+	line-height:50px
+}
+
+.menuSocial {
+	position:fixed;
+	bottom:1em;
+	z-index: 1;
+	text-align: center;
+	width:100%
+}
+.menuSocial li{
+	
+    display: inline-block;
+	padding:0.8em;
+	opacity:0.8
+}
+.menuSocial li:hover{
+	
+	opacity:1
+}
+
+#openMenu{
+	cursor:pointer
+}
+#openMenu i {
+	vertical-align:middle;
+}
