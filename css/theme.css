@@ -3,7 +3,7 @@ html{font-size:87.5%}
 @media all and (max-width: 768px) {
 html{font-size:81.25%}
 }
-body{font-size:1em;line-height:1.85714286em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:'Open Sans','Helvetica','Arial',sans-serif;color:#666;font-weight:400}
+body{font-size:1em;line-height:1.85714286em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:'Open Sans','Helvetica','Arial',sans-serif;/*color:#666;*/font-weight:400}
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:'Open Sans','Helvetica','Arial',sans-serif;color:#252525;font-weight:300;font-variant-ligatures:common-ligatures;margin-top:0;margin-bottom:0}
 h1,.h1{font-size:3.14285714em;line-height:1.31818182em}
 h2,.h2{font-size:2.35714286em;line-height:1.36363636em}
@@ -793,9 +793,6 @@ form[action*='list-manage.com'] *{transition:.3s linear;-webkit-transition:.3s l
 form[action*='list-manage.com'].form--active *{opacity:1}
 form[action*='list-manage.com'].no-labels label{display:none}
 form[action*='list-manage.com'] .small-meta{font-size:.5em}
-.twitter-feed .user{display:none}
-.twitter-feed .interact{display:none}
-.twitter-feed .timePosted{font-size:.87em}
 [class*='transition--']{transition:.3s ease;-webkit-transition:.3s ease;-moz-transition:.3s ease;opacity:0}
 [class*='transition--'].transition--active{opacity:1}
 .transition--scale{transform:scale(0.98);-webkit-transform:scale(0.98)}
@@ -1121,7 +1118,7 @@ pre{padding:.92857143em;background:#fafafa;border:1px solid #ececec;border-radiu
 .text-block h4:not(:last-child),.text-block .h4:not(:last-child){margin-bottom:.3421052631579em}
 .text-block h3,.text-block .h3{margin-bottom:.52em}
 @media all and (min-width: 768px) {
-div[class*='col-'] .text-block + .text-block{margin-top:3.71428571em}
+/*div[class*='col-'] .text-block + .text-block{margin-top:3.71428571em}*/
 }
 .heading-block{margin-bottom:3.71428571em}
 .heading-block h1,.heading-block h2,.heading-block h3,.heading-block h4,.heading-block h5,.heading-block h6,.heading-block .h1,.heading-block .h2,.heading-block .h3,.heading-block .h4,.heading-block .h5,.heading-block .h6{margin-bottom:0}
@@ -2372,7 +2369,7 @@ article .article__title h1{margin-bottom:.29545454545455em}
 article .article__body img,article .article__body iframe,article .article__body .video-cover{border-radius:6px}
 article .article__body img:not(:last-child),article .article__body iframe:not(:last-child),article .article__body .video-cover:not(:last-child){margin-bottom:1.85714286em}
 article .article__body > a:first-child > img{margin-bottom:1.85714286em}
-article .article__body p,article .article__body ul{font-size:1.35714286em;line-height:1.68421053em;font-weight:400;color:gray}
+article .article__body p,article .article__body ul{/*font-size:1.35714286em;line-height:1.68421053em;*/font-weight:400;color:gray}
 article .article__body p:not(:last-child),article .article__body ul:not(:last-child){margin-bottom:1.3684210526316em}
 article .article__body p + .btn:last-child,article .article__body ul + .btn:last-child{margin-top:.92857143em}
 article .article__body p + h5,article .article__body ul + h5{margin-top:2.78571429em}

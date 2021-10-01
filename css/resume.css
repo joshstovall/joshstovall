@@ -1,7 +1,3 @@
-blockquote, section p {
-	font-size: 1.2em !important
-}
-
 blockquote p {
 	font-size: 1.4em !important;
 	font-family: 'Lobster';
@@ -93,6 +89,8 @@ h5 {
 
 article .article__body p, article .article__body ul {
 	color: #111111;
+	display:block;
+	margin-bottom:0 !important
 }
 
 audio {
@@ -126,4 +124,16 @@ figure img {
 .h1 {
 	font-size: 2.5em;
 	padding-top: 1em;
+}
+
+
+
+.text-block .menu-horizontal li.social{
+	margin-right:0;
+}
+
+
+.menu-horizontal a {
+    padding-left: 0;
+    padding-right: 7px;
 }
