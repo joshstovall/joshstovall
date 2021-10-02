@@ -717,7 +717,7 @@ div[class*='col-'] .video-cover iframe{min-height:220px!important}
 .modal-container video{max-width:100%}
 body{background:#fff}
 .color--primary{color:#4a90e2!important}
-a{color:#4a90e2}
+a{color:#396ead}
 .color--primary-1{color:#31639c!important}
 .color--primary-2{color:#465773!important}
 .color--white{color:#fff}
@@ -1123,7 +1123,7 @@ pre{padding:.92857143em;background:#fafafa;border:1px solid #ececec;border-radiu
 .heading-block{margin-bottom:3.71428571em}
 .heading-block h1,.heading-block h2,.heading-block h3,.heading-block h4,.heading-block h5,.heading-block h6,.heading-block .h1,.heading-block .h2,.heading-block .h3,.heading-block .h4,.heading-block .h5,.heading-block .h6{margin-bottom:0}
 .bg--dark .bg--secondary{background:#343434}
-a{color:#4a90e2;font-weight:700}
+a{color:#396ead;font-weight:700}
 a:hover{color:#2275d7;text-decoration:underline}
 a.block{font-weight:400;text-decoration:none;color:#666}
 p a,span a,label a{font-size:1em;text-decoration:underline;font-weight:400;line-height:1.85714286em}
@@ -2680,8 +2680,10 @@ hr {
 }
 }
 
-a:hover {
+p a:hover,
+span a:hover {
 	text-decoration: underline !important;
+	color:#396ead !important
 }
 
 
@@ -2704,14 +2706,14 @@ a:hover {
 	display:block;
 	font-size:2em;
 	font-weight: 200;
-	padding:1em
+	padding:2vh
 }
  #closeMenu {
 	position:fixed;
 	top:1em;
 	right:1em;
 	z-index: 1;
-	cursor:pointer;
+	cursor:pointer !important;
 	font-size:2em;
 	 
     width: 50px;
@@ -2719,7 +2721,8 @@ a:hover {
     text-align: center;
 }
 #closeMenu i {
-	line-height:50px
+	line-height:50px;
+	pointer-events: none;
 }
 
 .menuSocial {

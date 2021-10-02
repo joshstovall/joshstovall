@@ -152,6 +152,7 @@ mr = (function (mr, $, window, document) {
 
 
     var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
+    
     if (path.includes('writing') || path.includes('projects') || path.includes('code') || path.includes('resume')) {
         $("#start").load("/modules/header.html", function() {
             $('#openMenu').on('click', function () {
@@ -160,11 +161,55 @@ mr = (function (mr, $, window, document) {
             $('#closeMenu').on('click', function () {
                 $('#menu').hide()
              });
-          });
 
+    var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
+
+    
+    if ( path.includes('resume')) { $('a[href*="/resume"]').css('font-weight','900') }
+    if ( path.includes('code')) { $('a[href*="/code"]').css('font-weight','900') }
+    if ( path.includes('writing')) { $('a[href*="/writing"]').css('font-weight','900') }
+    if ( path.includes('projects')) { $('a[href*="/projects"]').css('font-weight','900') }
+
+             $("body").append($('<div>').load('/modules/footer.html', function() {
+
+
+
+
+// if mobile, open social links in corresponding apps
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// facebook
+	if( /Android/i.test(navigator.userAgent) ) {
+		//$('.android').attr('href','fb://page/'+film.facebook)
+	}
+	if( /|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+
+        $( ".facebook" ).each(function( index ) {
+            $(this).attr('href','fb://profile?id='+ $(this).attr('username'))
+        });
+        $( ".instagram" ).each(function( index ) {
+            $(this).attr('href','instagram://user?username='+ $(this).attr('username'))
+        });
+        $( ".twitter" ).each(function( index ) {
+            $(this).attr('href','twitter://user?screen_name='+ $(this).attr('username'))
+        });
+	}
+} else {
+	$('.facebook').attr('target','_blank')
+	$('.twitter').attr('target','_blank')
+	$('.instagram').attr('target','_blank')
+	$('.linkedin').attr('target','_blank')
+	$('.youtube').attr('target','_blank')
+	$('.github').attr('target','_blank')
+}
+          
+
+
+}))
+            })
     }
 
-    $("body").append($('<div>').load('/modules/footer.html'));
+
+ 
 
     mr.components.documentReady.push(mr.util.documentReady);
     mr.components.windowLoad.push(mr.util.windowLoad);
@@ -245,7 +290,6 @@ mr = (function (mr, $, window, document) {
     return mr;
 
 }(mr, jQuery, window, document));
-
 
 //////////////// Scroll Class Modifier
 mr = (function (mr, $, window, document) {

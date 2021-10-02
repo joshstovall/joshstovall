@@ -1,15 +1,4 @@
-blockquote p {
-	font-size: 1.4em !important;
-	font-family: 'Lobster';
-	margin-bottom: 0.4em !important
-}
 
-blockquote span {
-	font-family: default;
-	padding-top: 0em;
-	font-weight: 400 !important;
-	font-style: normal !important;
-}
 
 a {
 	text-decoration: none !important;
@@ -42,41 +31,6 @@ article .article__body p, article .article__body ul {
 	margin-bottom:0 !important
 }
 
-audio {
-	width: 100%;
-	margin-bottom: 1.3684210526316em;
-}
-
-figure img {
-	max-width: min(500px, 100%);
-}
-
-#fig5 img {
-	max-height: 250px;
-}
-
-#bibliography ul li, #references ul li {
-	font-size: 0.8em !important;
-	/* white-space: nowrap; */
-	line-height: 1.6em;
-	letter-spacing: -0.6px;
-}
-
-#fig24 {
-	max-height: 210px;
-}
-
-.type--fine-print {
-	padding-right: 6em;
-}
-
-.h1 {
-	font-size: 2.5em;
-	padding-top: 1em;
-}
-
-
-
 .text-block .menu-horizontal li.social{
 	margin-right:0;
 }
@@ -93,4 +47,30 @@ figure img {
 
 .text-block span {
     display: block;
+}
+
+h3 {
+    font-size: 1em !important;
+    line-height: 1.85714286em !important;
+	margin-bottom:0 !important;
+	font-weight: 600 !important;
+}
+
+#download{
+	position:fixed;
+	z-index: 1;
+	left:1em;
+	bottom:1em;
+	cursor:pointer !important;
+	background-color:white;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+@media print {
+	
+
+  }
+ #print >  .container{
+	 max-width: none !important;
+ } #print *{
+	font-size: 1.2rem  !important
 }
