@@ -153,7 +153,7 @@ mr = (function (mr, $, window, document) {
 
     var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
     
-    if (path.includes('writing') || path.includes('projects') || path.includes('code') || path.includes('resume')) {
+    if (path.includes('writing') || path.includes('projects') || path.includes('code') || path.includes('music') || path.includes('resume')) {
         $("#start").load("/modules/header.html", function() {
             $('#openMenu').on('click', function () {
                $('#menu').show()
@@ -169,6 +169,7 @@ mr = (function (mr, $, window, document) {
     if ( path.includes('code')) { $('a[href*="/code"]').css('font-weight','900') }
     if ( path.includes('writing')) { $('a[href*="/writing"]').css('font-weight','900') }
     if ( path.includes('projects')) { $('a[href*="/projects"]').css('font-weight','900') }
+    if ( path.includes('music')) { $('a[href*="/music"]').css('font-weight','900') }
 
              $("body").append($('<div>').load('/modules/footer.html', function() {
 
