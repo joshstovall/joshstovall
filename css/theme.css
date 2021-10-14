@@ -2669,11 +2669,18 @@ span i {font-size:1em;		}
 body {
 	background-color:#252525;
 }
+.article__title *,h1,h2,h3 {
+	color :white
+}
 p{
 	color:#FFF !important;
 }
-.text-block *{
+.text-block >*{
 	color:#FFF !important;
+}
+a{color:#cde4ff}
+a i {
+	color:white
 }
 hr {
     border-color: #ececec3d;
