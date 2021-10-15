@@ -2681,7 +2681,7 @@ span i {font-size:1em;		}
 body {
 	background-color:#252525;
 }
-.article__title *,h1,h2,h3,h4,h5 {
+.article__title *,h1,h2,h3,h4,h5:not(a h5) {
 	color :white
 }
 p{
@@ -2690,8 +2690,8 @@ p{
 .text-block >*{
 	color:#FFF !important;
 }
-a{color:#cde4ff}
-a i {
+a:not(.product a){color:#cde4ff}
+a i:not(.product a i){
 	color:white
 }
 hr {

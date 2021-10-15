@@ -165,11 +165,11 @@ mr = (function (mr, $, window, document) {
     var path = document.URL//.substr(0,document.URL.lastIndexOf('/'))
 
     
-    if ( path.includes('resume')) { $('a[href*="/resume"]').css('font-weight','900') }
-    if ( path.includes('code')) { $('a[href*="/code"]').css('font-weight','900') }
-    if ( path.includes('writing')) { $('a[href*="/writing"]').css('font-weight','900') }
-    if ( path.includes('projects')) { $('a[href*="/projects"]').css('font-weight','900') }
-    if ( path.includes('music')) { $('a[href*="/music"]').css('font-weight','900') }
+    if ( path.includes('/resume')) { $('a[href*="/resume"]').css('font-weight','900') }
+    if ( path.includes('/code')) { $('a[href*="/code"]').css('font-weight','900') }
+    if ( path.includes('/writing')) { $('a[href*="/writing"]').css('font-weight','900') }
+    if ( path.includes('/projects')) { $('a[href*="/projects"]').css('font-weight','900') }
+    if ( path.includes('/music')) { $('a[href*="/music"]').css('font-weight','900') }
 
              $("body").append($('<div>').load('/modules/footer.html', function() {
 
