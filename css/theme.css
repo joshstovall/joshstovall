@@ -2666,10 +2666,22 @@ span i {font-size:1em;		}
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
+	li{
+		color:white
+	}ul,td{
+		color:white !important
+	}
+	table th{
+		background-color: transparent;
+		color:white
+	}
+	blockqoute span,figcaption{
+		color:white !important
+	}
 body {
 	background-color:#252525;
 }
-.article__title *,h1,h2,h3 {
+.article__title *,h1,h2,h3,h4,h5 {
 	color :white
 }
 p{
