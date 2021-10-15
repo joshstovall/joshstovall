@@ -2667,6 +2667,9 @@ span i {font-size:1em;		}
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
+	section:not(.imagebg):not([class*='bg-']) + section.bg--secondary{
+		border-top:0 !important
+	}
 
 	p a {
 		color:white !important
