@@ -1199,7 +1199,7 @@ hr[data-title]:before{content:attr(data-title);background:#fff;position:relative
 .btn.btn--sm + .btn--sm{margin-left:.92857143em}
 p > .btn{text-decoration:none}
 @media all and (max-width: 767px) {
-.btn:not(:last-child){margin-bottom:1.85714286em}
+/* .btn:not(:last-child){margin-bottom:1.85714286em} */
 }
 .btn--icon{padding-left:5.57142857em}
 .btn--icon i{position:absolute;height:100%;left:0;top:0;background:rgba(0,0,0,0.1);padding:0 13px;border-radius:6px 0 0 6px;font-size:16px;line-height:41px}
