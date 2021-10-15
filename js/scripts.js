@@ -206,7 +206,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 
 }))
-            })
+            });
+    } else {
+        $("body").append($('<div>').load('/modules/footer.html', function() {
+
+
+        }))
     }
 
 
