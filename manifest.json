@@ -25,7 +25,8 @@
         {
             "src": "/img/logo/180.png",
             "type": "image/png",
-            "sizes": "180x180"
+            "sizes": "180x180",
+            "purpose": "any maskable"
         }
     ],
     "start_url": "/index.html",
