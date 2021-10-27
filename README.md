@@ -8,6 +8,7 @@
 ## My Projects
 | image | name | links | 
 | :-: | :-: |:-: |
+|[<img src="https://joshstovall.com/img/twitter-sentiment-analysis.webp" width="160 !important" height="100" title="https://github.com/Intellivest-Technologies/Twitter-Sentiment-Analysis"/>](https://github.com/Intellivest-Technologies/Twitter-Sentiment-Analysis) | **Tweet Analysis**<br>Twitter Sentiment Analysis | [Code](https://github.com/Intellivest-Technologies/Twitter-Sentiment-Analysis)<br/>[Results](https://docs.google.com/spreadsheets/d/1aj078aaT31qRacfm9wdvwYptq2JEwBAs7Y42paD1Www)|
 |[<img src="https://joshstovall.com/img/high-octane-pictures.webp" width="160 !important" height="100" title="highoctane.pictures"/>](https://highoctane.pictures) | **highoctane.pictures**<br>Film Agency Website | [Demo](https://highoctane.pictures/)|
 |[<img src="https://joshstovall.com/img/xrband.webp" width="160 !important" height="100" title="XR.band"/>](http://xr.band) | **XR.band**<br>WebXR Experiment | [Demo](http://xr.band/)|
 |[<img src="https://joshstovall.com/img/solfege.gif" width="160 !important" height="100" title="Solfege to MIDI"/>](https://github.com/instrumentbible/solfege.ai) | **Solfege to MIDI**<br>Tensorflow Experiment | [GitHub](https://github.com/instrumentbible/solfege.ai) <br> [Demo](https://instrumentbible.github.io/solfege.ai/)|
