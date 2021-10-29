@@ -2683,7 +2683,8 @@ span i {font-size:1em;		}
 	}
 	li{
 		color:white
-	}ul,td{
+	}
+	ul,td{
 		color:white !important
 	}
 	table th{
@@ -2696,6 +2697,9 @@ span i {font-size:1em;		}
 body {
 	background-color:#252525;
 }
+.back-to-top i {
+	color:#252525 !important;
+} 
 .article__title *,h1,h2,h3,h4,h5 {
 	color :white
 }
