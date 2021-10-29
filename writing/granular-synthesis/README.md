@@ -215,11 +215,11 @@ Figure 17 shows Stockhausen describing this process in 1972, before it was actua
 
 Thus to perceive this transition between time layers, pulses must be strong. [Helmholtz](https://en.wikipedia.org/wiki/Hermann_von_Helmholtz) observed that a sense of continuity is perceived between 24 to 28 Hz, but that the impression of a definite pitch does not take hold until 40Hz.<sup>[13](#ref13)</sup> I find this fascinating, and a key ingredient to pulsar synthesis. If music is all about tension and release, this is what makes pulsar synthesis music. Stockhausen formulated a theory of the continuum between rhythm and pitch, that is, between infrasonic frequencies and the audible frequencies of short-duration impulses.
 
-While pulsar synthesis is not “granular” per se (using sampled audio), these concepts are fundamental to understanding granular possibilities regarding the time domain. By transposing rhythms into the audible frequency range, Stockhausen could build un-pitched noises from aperiodic sequences of impulses. He distinguishes twenty-one time octaves spanning the durations from 1/16th of a second to one hour, which constitute the range of perceivable events music composition.<sup>[14](#ref14)</sup>. Roads builds upon and illustrates this theory in *Microsound* (Figure 21).
-
 <iframe src="https://youtube.com/embed/Ytq6A1sx1JY"></iframe>
 
 > Figure 19. The splitting of the sound.
+
+While pulsar synthesis is not “granular” per se (using sampled audio), these concepts are fundamental to understanding granular possibilities regarding the time domain. By transposing rhythms into the audible frequency range, Stockhausen could build un-pitched noises from aperiodic sequences of impulses. He distinguishes twenty-one time octaves spanning the durations from 1/16th of a second to one hour, which constitute the range of perceivable events music composition.<sup>[14](#ref14)</sup>. Roads builds upon and illustrates this theory in *Microsound* (Figure 21).
 
 ![Time domain in Microsound by Curtis Roads](https://joshstovall.com/writing/granular-synthesis/img/fig-21.png)
 > Figure 21. Time Scales of Music (Curtis Roads, *Microsound*)

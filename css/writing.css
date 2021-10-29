@@ -3,7 +3,7 @@ blockquote, section p {
 }
 
 blockquote p {
-	font-size: 1.4em !important;
+	font-size: 1em !important;
 	font-family: 'Lobster';
 	margin-bottom: 0.4em !important
 }
@@ -13,8 +13,11 @@ blockquote span {
 	padding-top: 0em;
 	font-weight: 400 !important;
 	font-style: normal !important;
+	color:white
 }
-
+article .article__body img:not(:last-child), article .article__body iframe:not(:last-child), article .article__body .video-cover:not(:last-child){
+	margin-bottom: 0.8em !important;
+}
 a {
 	text-decoration: none !important;
 	color: auto !important;
